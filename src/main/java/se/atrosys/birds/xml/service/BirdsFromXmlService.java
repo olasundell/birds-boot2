@@ -6,12 +6,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
-import se.atrosys.birds.model.Bird;
-import se.atrosys.birds.model.BirdName;
-import se.atrosys.birds.model.Family;
-import se.atrosys.birds.model.Genus;
-import se.atrosys.birds.model.Language;
-import se.atrosys.birds.model.Order;
 import se.atrosys.birds.xml.model.IocList;
 import se.atrosys.birds.xml.model.XmlFamily;
 import se.atrosys.birds.xml.model.XmlGenus;
@@ -21,7 +15,6 @@ import se.atrosys.birds.xml.model.XmlSpecies;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
-import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.transform.stream.StreamSource;
 import java.io.FileReader;
 import java.io.IOException;
@@ -63,6 +56,54 @@ public class BirdsFromXmlService {
 	public IocList readCsv(IocList iocList) {
 		Map<String, XmlSpecies> birdsByName = iocList.allBirdsByName();
 
+		List<CSVRecord> records = readRecords();
+
+		Map<Integer, String> header = createHeader(records.subList(0, 3));
+		XmlSpecies currentBird = null;
+
+		// since the bird names are spread out over three lines, we'll be fugly about it
+		int counter = 0;
+
+		for (CSVRecord record : records.subList(3, records.size())) {
+			// order and family are declared at the following record positions,
+			// thus no bird names on the current line
+			if (!record.get(1).isEmpty() || !record.get(2).isEmpty()) {
+				continue;
+			}
+
+			// a new bird!
+			if (counter == 0) {
+				final String name = record.get(3);
+				currentBird = birdsByName.get(name);
+			}
+
+			currentBird.getNames().putAll(parseForNames(header, record));
+
+			// we've parsed all three lines, time to move on to another bird
+			if (++counter == 3) {
+				counter = 0;
+			}
+		}
+
+		return iocList;
+	}
+
+	private Map<String, String> parseForNames(Map<Integer, String> header, CSVRecord record) {
+		Map<String, String> result = new HashMap<>();
+
+		// record.get(0) is the line number
+		for (int i = 1; i < record.size(); i++) {
+			final String s = record.get(i);
+			if (!s.isEmpty()) {
+				final String lang = header.get(i);
+				result.put(lang, s);
+			}
+		}
+
+		return result;
+	}
+
+	private List<CSVRecord> readRecords() {
 		List<CSVRecord> records = null;
 
 		try {
@@ -72,28 +113,7 @@ public class BirdsFromXmlService {
 			logger.error("Could not read csv file", e);
 			throw new IllegalStateException(e);
 		}
-
-		Map<Integer, String> header = createHeader(records.subList(0, 3));
-		XmlSpecies currentBird = null;
-
-		for (CSVRecord record : records.subList(3, records.size())) {
-			if (!record.get(1).isEmpty() || !record.get(2).isEmpty()) {
-				currentBird = null;
-				continue;
-			}
-			if (currentBird == null) {
-				currentBird = birdsByName.get(record.get(3));
-			}
-
-			for (int i = 0; i < record.size(); i++) {
-				if (!record.get(i).isEmpty()) {
-					currentBird.getNames().put(header.get(i), record.get(i));
-				}
-			}
-
-		}
-
-		return iocList;
+		return records;
 	}
 
 	private Map<Integer, String> createHeader(List<CSVRecord> firstRows) {

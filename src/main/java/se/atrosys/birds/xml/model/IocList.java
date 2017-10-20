@@ -12,6 +12,7 @@ import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -32,10 +33,6 @@ public class IocList {
 	private List<XmlOrder> orders = new ArrayList<>();
 
 	private transient Map<String, XmlSpecies> birdsByName;
-
-	public Set<String> languages() {
-		return orders.get(0).getFamilies().get(0).getGenus().get(0).getSpecies().get(0).getNames().keySet();
-	}
 
 	public Map<String, XmlSpecies> allBirdsByName() {
 		if (birdsByName == null) {

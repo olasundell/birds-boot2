@@ -58,7 +58,7 @@ public class IocListConverter {
 
 	private Bird convertBird(XmlSpecies species) {
 		return Bird.builder()
-			.scientificName(species.getNames().get("Scientific Name"))
+			.scientificName(species.getLatinName())
 			.birdNames(species.getNames().entrySet().stream().map(this::convertBirdName).collect(Collectors.toList()))
 			.build();
 	}

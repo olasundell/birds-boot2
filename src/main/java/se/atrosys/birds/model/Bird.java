@@ -1,16 +1,15 @@
 package se.atrosys.birds.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIdentityReference;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -18,7 +17,6 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Transient;
@@ -40,6 +38,7 @@ public class Bird {
 	@Id
 //	@Column(name = "ID")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@JsonIdentityReference
 	private Integer id;
 
 	private String scientificName;
@@ -53,6 +52,18 @@ public class Bird {
 	@ManyToOne
 	@JsonBackReference
 	private Genus genus;
+
+	@Transient
+	@JsonProperty("genusName")
+	public String getGenusName() {
+		return genus.getName();
+	}
+
+	@Transient
+	@JsonProperty("familyName")
+	public String getFamilyName() {
+		return genus.getFamily().getName();
+	}
 //	@ManyToMany(cascade = CascadeType.ALL)
 //	@JoinColumn(name = "BIRD_ID")
 //	@ForeignKey(name = "FK_PHOTOS")

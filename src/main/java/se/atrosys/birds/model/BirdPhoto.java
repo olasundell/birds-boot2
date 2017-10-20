@@ -10,4 +10,5 @@ import lombok.Data;
 @Builder
 public class BirdPhoto {
 	private String url;
+	private String niftyUrl;
 }

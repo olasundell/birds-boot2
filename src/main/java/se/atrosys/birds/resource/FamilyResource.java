@@ -3,6 +3,7 @@ package se.atrosys.birds.resource;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import se.atrosys.birds.model.Family;
@@ -25,5 +26,10 @@ public class FamilyResource {
 	public Page<Family> all(Pageable pageable) {
 		final Page<Family> all = familyRepository.findAll(pageable);
 		return all;
+	}
+
+	@GetMapping("/{name}")
+	public Family one(@PathVariable String name) {
+		return familyRepository.findFirstByName(name);
 	}
 }

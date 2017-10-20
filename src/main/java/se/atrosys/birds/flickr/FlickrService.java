@@ -34,10 +34,15 @@ public class FlickrService {
 
 	public List<BirdPhoto> getPictures(Bird model) throws JAXBException {
 		PhotoList<Photo> result = search(model.getScientificName());
-		result.get(0).getUrl();
+//		String.format("http://farm%s.staticflickr.com/%s/%s_%s.jpg", farm, server, id, secret);
 		return result.stream()
 			.map(p -> BirdPhoto.builder()
 				.url(p.getUrl())
+				.niftyUrl(String.format("http://farm%s.staticflickr.com/%s/%s_%s.jpg",
+					p.getFarm(),
+					p.getServer(),
+					p.getId(),
+					p.getSecret()))
 				.build())
 			.collect(Collectors.toList());
 	}

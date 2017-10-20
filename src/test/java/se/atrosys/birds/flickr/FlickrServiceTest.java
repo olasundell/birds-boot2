@@ -1,9 +1,13 @@
 package se.atrosys.birds.flickr;
 
+import org.junit.Assert;
 import org.junit.Test;
 import se.atrosys.birds.model.Bird;
+import se.atrosys.birds.model.BirdPhoto;
 
 import javax.xml.bind.JAXBException;
+
+import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -14,9 +18,10 @@ public class FlickrServiceTest {
 	@Test
 	public void shouldDoStuff() throws JAXBException {
 		FlickrService service = new FlickrService(new FileFetcher());
-//		FlickrPhotoList result = service.getPictures(Bird.builder()
-//			.scientificName("Pica pica")
-//			.build());
+		List<BirdPhoto> result = service.getPictures(Bird.builder()
+			.scientificName("Pica pica")
+			.build());
+		Assert.assertNotNull(result);
 	}
 
 }

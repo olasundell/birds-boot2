@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 import se.atrosys.birds.model.Bird;
 import se.atrosys.birds.repository.BirdRepository;
 
+import javax.persistence.GeneratedValue;
 import java.util.List;
 
 /**
  * TODO write documentation
  */
 @RestController
-@RequestMapping("/birds")
 public class BirdResource {
 	private final BirdRepository birdRepository;
 
@@ -22,7 +22,12 @@ public class BirdResource {
 		this.birdRepository = birdRepository;
 	}
 
-	@GetMapping
+	@GetMapping("/random")
+	public Bird random() {
+		return birdRepository.findOne(birdRepository.randomId());
+	}
+
+	@GetMapping("/birds")
 	public Page<Bird> all(Pageable pageable) {
 		return birdRepository.findAll(pageable);
 	}

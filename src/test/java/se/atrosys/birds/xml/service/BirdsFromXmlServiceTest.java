@@ -14,6 +14,7 @@ import se.atrosys.birds.xml.model.XmlSpecies;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Set;
 
 /**
  * TODO write documentation
@@ -43,6 +44,7 @@ public class BirdsFromXmlServiceTest {
 		unmarshallWatch.stop();
 
 		assertWatch.start();
+
 		Assert.assertNotNull(result);
 
 		final List<XmlOrder> orders = result.getOrders();
@@ -90,8 +92,11 @@ public class BirdsFromXmlServiceTest {
 		Assert.assertNotNull("Species should have authority", species.getAuthority());
 		Assert.assertNotNull("Species should have breeding regions", species.getBreedingRegions());
 		Assert.assertNotNull("Species should have breeding subregions", species.getBreedingSubregions());
-		Assert.assertNotNull("Species should have english name", species.getEnglishName());
-		Assert.assertNotNull("Species should have latin name", species.getLatinName());
 
+		Assert.assertNotNull("Species should have english name", species.getEnglishName());
+		Assert.assertFalse("Species should have english name", species.getEnglishName().isEmpty());
+
+		Assert.assertNotNull("Species should have latin name", species.getLatinName());
+		Assert.assertFalse("Species should have latin name", species.getLatinName().isEmpty());
 	}
 }
