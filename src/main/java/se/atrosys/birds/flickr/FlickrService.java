@@ -8,6 +8,7 @@ import com.flickr4java.flickr.photos.PhotoList;
 import com.flickr4java.flickr.photos.SearchParameters;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 import se.atrosys.birds.model.Bird;
 import se.atrosys.birds.model.BirdPhoto;
@@ -32,6 +33,7 @@ public class FlickrService {
 		this.fileFetcher = fileFetcher;
 	}
 
+//	@Cacheable
 	public List<BirdPhoto> getPictures(Bird model) throws JAXBException {
 		PhotoList<Photo> result = search(model.getScientificName());
 //		String.format("http://farm%s.staticflickr.com/%s/%s_%s.jpg", farm, server, id, secret);

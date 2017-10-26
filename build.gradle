@@ -25,9 +25,12 @@ repositories {
 
 dependencies {
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator'
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-cache'
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-web'
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa'
 	compile group: 'org.apache.commons', name: 'commons-csv', version: '1.5'
+
+	compile "ch.qos.logback:logback-access"
 
 	compile group: 'com.flickr4java', name: 'flickr4java', version: '2.17'
 

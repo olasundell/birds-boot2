@@ -63,13 +63,16 @@ public class PopulateConfig {
 
 		List<Order> orders = new IocListConverter(languageRepository.findAll()).convertIocList(iocList);
 
-		orders.forEach(
-			o -> {
-				Order order = orderRepository.save(o);
-				o.getFamilies().forEach(
-					saveFamily(order)
-				);
-			}
+		saveOrder(orders.get(0));
+//		orders.forEach(this::saveOrder);
+	}
+
+	private void saveOrder(Order o) {
+		logger.info("Saving order {}", o.getName());
+
+		Order order = orderRepository.save(o);
+		o.getFamilies().forEach(
+			saveFamily(order)
 		);
 	}
 

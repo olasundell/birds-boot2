@@ -2,6 +2,7 @@ package se.atrosys.birds.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIdentityReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
@@ -23,6 +24,7 @@ import javax.persistence.Transient;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * TODO write documentation
@@ -36,7 +38,6 @@ import java.util.Map;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Bird {
 	@Id
-//	@Column(name = "ID")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@JsonIdentityReference
 	private Integer id;
@@ -64,22 +65,13 @@ public class Bird {
 	public String getFamilyName() {
 		return genus.getFamily().getName();
 	}
-//	@ManyToMany(cascade = CascadeType.ALL)
-//	@JoinColumn(name = "BIRD_ID")
-//	@ForeignKey(name = "FK_PHOTOS")
-//    @JoinTable(name = "BIRDS_PHOTOS_JT")
-//	private List<Photo> birdPhotos;
 
 	@OneToMany(cascade = CascadeType.ALL)
-//	@ForeignKey(name = "FK_SCARCITY")
 	private List<RegionalScarcity> regionalScarcity;
 
-//	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-//	@ForeignKey(name = "FK_SOUNDS")
-//	private List<Sound> sounds;
-
 	@Transient
-	private Map<Locale, String> nameByLocale;
-	@Transient
-	private Map<String, String> nameByString;
+	@JsonIgnore
+	public Map<String, String> namesByLanguage() {
+		return birdNames.stream().collect(Collectors.toMap(b -> b.getLanguage().getName(), BirdName::getName));
+	}
 }

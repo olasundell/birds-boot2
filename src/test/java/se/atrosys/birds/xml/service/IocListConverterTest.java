@@ -12,7 +12,12 @@ import se.atrosys.birds.model.Language;
 import se.atrosys.birds.model.Order;
 import se.atrosys.birds.xml.model.IocList;
 
+import java.util.AbstractMap;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -23,6 +28,7 @@ public class IocListConverterTest {
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 	private IocListConverter iocListConverter;
 	private IocList iocList;
+	private Set<String> languages;
 
 	@Before
 	public void setUp() throws Exception {
@@ -30,7 +36,7 @@ public class IocListConverterTest {
 		iocList = birdsFromXmlService.readIocList();
 		iocList = birdsFromXmlService.readCsv(iocList);
 
-		Set<String> languages = birdsFromXmlService.languages(iocList);
+		languages = birdsFromXmlService.languages(iocList);
 
 		final List<Language> list = languages.stream()
 			.map(l -> Language.builder()
@@ -40,6 +46,43 @@ public class IocListConverterTest {
 		Assert.assertFalse("Should have non-empty language list", list.isEmpty());
 
 		iocListConverter = new IocListConverter(list);
+	}
+
+	@Test
+	public void shouldFindLanguagesAsLocales() {
+		final List<String> strings = new ArrayList<>(languages);
+
+		Map<String, Locale> locales = strings.stream()
+			.map(this::mapLocale)
+			.collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+
+		Assert.assertEquals(languages.size(), locales.size());
+	}
+
+	private Map.Entry<String, Locale> mapLocale(String s) {
+		return new AbstractMap.SimpleEntry<>(s, findLocale(s));
+	}
+
+	private Locale findLocale(String lang) {
+		logger.info("Finding locale for {}", lang);
+		switch (lang) {
+			case "Scientific Name":
+				return Locale.forLanguageTag("la");
+			case "Afrikaans":
+				return Locale.forLanguageTag("af");
+			case "Chinese (Traditional)":
+				return Locale.TRADITIONAL_CHINESE;
+			default:
+				for (Locale l: Locale.getAvailableLocales()) {
+					if (l.getDisplayLanguage().equalsIgnoreCase(lang)) {
+						return l;
+					}
+				}
+		}
+
+		logger.error("Could not find locale for {}", lang);
+
+		return null;
 	}
 
 	@Test
@@ -66,7 +109,7 @@ public class IocListConverterTest {
 //		Assert.assertNotNull("Family has no english name", family.getEnglishName());
 		Assert.assertNotNull("Family has no genus", family.getGenus());
 		Assert.assertFalse("Family should have genuses", family.getGenus().isEmpty());
-//		assertGenus(family.getGenus().get(0));
+
 		family.getGenus().forEach(genus -> {
 			genus.setFamily(family);
 			assertGenus(genus);
@@ -79,7 +122,6 @@ public class IocListConverterTest {
 		Assert.assertNotNull("Genus should have birds", genus.getBirds());
 		Assert.assertFalse("Genus should have several birds", genus.getBirds().isEmpty());
 
-//		assertSpecies(genus.getSpecies().get(0));
 		genus.getBirds().forEach(bird -> {
 			bird.setGenus(genus);
 			assertSpecies(bird);
@@ -97,6 +139,15 @@ public class IocListConverterTest {
 		Assert.assertNotNull("Species should have non-null names", bird.getBirdNames());
 
 		Assert.assertFalse("Species " + name + " should have non-empty names list", bird.getBirdNames().isEmpty());
+
+		Assert.assertTrue("Should contain an english name", bird.namesByLanguage().containsKey("English"));
 	}
 
+
+	@Test
+	public void localeStuff() {
+		final Locale locale = Locale.ENGLISH;
+
+		Assert.assertNotNull(locale);
+	}
 }

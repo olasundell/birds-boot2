@@ -1,7 +1,9 @@
 package se.atrosys.birds.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -26,6 +28,7 @@ import javax.persistence.ManyToOne;
 public class BirdName {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@JsonIgnore
 	private Integer id;
 
 	@ManyToOne(fetch = FetchType.LAZY)
@@ -37,4 +40,9 @@ public class BirdName {
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JsonBackReference
 	private Language language;
+
+	@JsonProperty("lang")
+	public String getLang() {
+		return language.getName();
+	}
 }
