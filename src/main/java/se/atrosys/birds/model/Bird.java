@@ -13,7 +13,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.CascadeType;
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,6 +24,8 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Transient;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
@@ -69,9 +74,24 @@ public class Bird {
 	@OneToMany(cascade = CascadeType.ALL)
 	private List<RegionalScarcity> regionalScarcity;
 
+	@ElementCollection(targetClass = BreedingRegion.class)
+	@Enumerated(EnumType.STRING)
+	@Builder.Default
+	private List<BreedingRegion> breedingRegions = new ArrayList<>();
+
 	@Transient
 	@JsonIgnore
 	public Map<String, String> namesByLanguage() {
-		return birdNames.stream().collect(Collectors.toMap(b -> b.getLanguage().getName(), BirdName::getName));
+		Map<String, String> map = new HashMap<>();
+
+		for (BirdName name: birdNames) {
+			map.put(name.getLang().toLowerCase(), name.getName());
+		}
+
+		return map;
+
+		// it is beyond me why the below doesn't work
+//		return birdNames.stream()
+//			.collect(Collectors.toMap(BirdName::getLang, BirdName::getName));
 	}
 }

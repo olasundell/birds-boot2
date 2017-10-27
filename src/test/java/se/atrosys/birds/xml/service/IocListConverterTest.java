@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import se.atrosys.birds.model.Bird;
+import se.atrosys.birds.model.BirdName;
 import se.atrosys.birds.model.Family;
 import se.atrosys.birds.model.Genus;
 import se.atrosys.birds.model.Language;
@@ -38,51 +39,14 @@ public class IocListConverterTest {
 
 		languages = birdsFromXmlService.languages(iocList);
 
-		final List<Language> list = languages.stream()
-			.map(l -> Language.builder()
-			.name(l)
-			.build()).collect(Collectors.toList());
+//		final List<Language> list = languages.stream()
+//			.map(l -> Language.builder()
+//			.name(l)
+//			.build()).collect(Collectors.toList());
 
-		Assert.assertFalse("Should have non-empty language list", list.isEmpty());
+		Assert.assertFalse("Should have non-empty language list", languages.isEmpty());
 
-		iocListConverter = new IocListConverter(list);
-	}
-
-	@Test
-	public void shouldFindLanguagesAsLocales() {
-		final List<String> strings = new ArrayList<>(languages);
-
-		Map<String, Locale> locales = strings.stream()
-			.map(this::mapLocale)
-			.collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
-
-		Assert.assertEquals(languages.size(), locales.size());
-	}
-
-	private Map.Entry<String, Locale> mapLocale(String s) {
-		return new AbstractMap.SimpleEntry<>(s, findLocale(s));
-	}
-
-	private Locale findLocale(String lang) {
-		logger.info("Finding locale for {}", lang);
-		switch (lang) {
-			case "Scientific Name":
-				return Locale.forLanguageTag("la");
-			case "Afrikaans":
-				return Locale.forLanguageTag("af");
-			case "Chinese (Traditional)":
-				return Locale.TRADITIONAL_CHINESE;
-			default:
-				for (Locale l: Locale.getAvailableLocales()) {
-					if (l.getDisplayLanguage().equalsIgnoreCase(lang)) {
-						return l;
-					}
-				}
-		}
-
-		logger.error("Could not find locale for {}", lang);
-
-		return null;
+		iocListConverter = new IocListConverter(languages);
 	}
 
 	@Test
@@ -129,7 +93,9 @@ public class IocListConverterTest {
 	}
 
 	private void assertSpecies(Bird bird) {
-//		Assert.assertNotNull("Species should have breeding regions", bird.get());
+		Assert.assertNotNull("Species should have breeding regions", bird.getBreedingRegions());
+		Assert.assertFalse("Species should have non-empty breeding regions list", bird.getBreedingRegions().isEmpty());
+
 //		Assert.assertNotNull("Species should have breeding subregions", bird.getBreedingSubregions());
 
 		Assert.assertNotNull("Species should have latin name", bird.getScientificName());
@@ -140,7 +106,7 @@ public class IocListConverterTest {
 
 		Assert.assertFalse("Species " + name + " should have non-empty names list", bird.getBirdNames().isEmpty());
 
-		Assert.assertTrue("Should contain an english name", bird.namesByLanguage().containsKey("English"));
+		Assert.assertTrue("Should contain an english name", bird.namesByLanguage().containsKey("english"));
 	}
 
 

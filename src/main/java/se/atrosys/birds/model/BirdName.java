@@ -15,6 +15,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import java.util.Locale;
 
 /**
  * TODO write documentation
@@ -37,12 +38,10 @@ public class BirdName {
 
 	private String name;
 
-	@ManyToOne(fetch = FetchType.EAGER)
-	@JsonBackReference
-	private Language language;
+	private Locale language;
 
 	@JsonProperty("lang")
 	public String getLang() {
-		return language.getName();
+		return language.getDisplayLanguage();
 	}
 }

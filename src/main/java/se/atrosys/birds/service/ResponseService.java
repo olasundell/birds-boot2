@@ -55,7 +55,7 @@ public class ResponseService {
 	private Response.ResponseBird mapToRB(Bird bird, String language) {
 		return Response.ResponseBird.builder()
 			.genusName(bird.getGenusName())
-			.name(bird.namesByLanguage().get(language))
+			.name(bird.namesByLanguage().get(language.toLowerCase()))
 			.scientificName(bird.getScientificName())
 			.build();
 	}

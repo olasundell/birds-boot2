@@ -56,15 +56,10 @@ public class PopulateConfig {
 		IocList iocList = xmlService.readIocList();
 		iocList = xmlService.readCsv(iocList);
 
-		xmlService.languages(iocList)
-			.stream()
-			.map(s -> Language.builder().name(s).build())
-			.forEach(languageRepository::save);
+		List<Order> orders = new IocListConverter(xmlService.languages(iocList)).convertIocList(iocList);
 
-		List<Order> orders = new IocListConverter(languageRepository.findAll()).convertIocList(iocList);
-
-		saveOrder(orders.get(0));
-//		orders.forEach(this::saveOrder);
+//		saveOrder(orders.get(0));
+		orders.forEach(this::saveOrder);
 	}
 
 	private void saveOrder(Order o) {

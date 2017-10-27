@@ -10,4 +10,6 @@ import se.atrosys.birds.model.Bird;
 public interface BirdRepository extends PagingAndSortingRepository<Bird, Integer> {
 	@Query(value="SELECT id FROM Bird ORDER BY RAND() LIMIT 1", nativeQuery = true)
 	Integer randomId();
+
+	Bird findByScientificName(String scientificName);
 }

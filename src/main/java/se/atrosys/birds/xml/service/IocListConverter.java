@@ -2,6 +2,7 @@ package se.atrosys.birds.xml.service;
 
 import se.atrosys.birds.model.Bird;
 import se.atrosys.birds.model.BirdName;
+import se.atrosys.birds.model.BreedingRegion;
 import se.atrosys.birds.model.Family;
 import se.atrosys.birds.model.Genus;
 import se.atrosys.birds.model.Language;
@@ -12,8 +13,11 @@ import se.atrosys.birds.xml.model.XmlGenus;
 import se.atrosys.birds.xml.model.XmlOrder;
 import se.atrosys.birds.xml.model.XmlSpecies;
 
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.stream.Collectors;
 
@@ -21,11 +25,10 @@ import java.util.stream.Collectors;
  * TODO write documentation
  */
 public class IocListConverter {
-	private final Map<String, Language> languages;
+	private final Map<String, Locale> languages;
 
-	public IocListConverter(Iterable<Language> all) {
-		languages = new HashMap<>();
-		all.forEach(language -> languages.put(language.getName(), language));
+	public IocListConverter(Collection<String> lang) {
+		languages = LanguageConverter.shouldFindLanguagesAsLocales(lang);
 	}
 
 	public List<Order> convertIocList(IocList iocList) {
@@ -59,8 +62,15 @@ public class IocListConverter {
 	private Bird convertBird(XmlSpecies species) {
 		return Bird.builder()
 			.scientificName(species.getLatinName())
+			.breedingRegions(findBreedingRegions(species))
 			.birdNames(species.getNames().entrySet().stream().map(this::convertBirdName).collect(Collectors.toList()))
 			.build();
+	}
+
+	private List<BreedingRegion> findBreedingRegions(XmlSpecies species) {
+		return Arrays.stream(species.getBreedingRegions().split(","))
+			.map(BreedingRegion::findByCode)
+			.collect(Collectors.toList());
 	}
 
 	private BirdName convertBirdName(Map.Entry<String, String> nameEntry) {

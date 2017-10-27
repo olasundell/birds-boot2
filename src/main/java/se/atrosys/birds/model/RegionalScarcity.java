@@ -1,5 +1,6 @@
 package se.atrosys.birds.model;
 
+import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.Entity;
@@ -16,6 +17,7 @@ import javax.persistence.OneToOne;
  */
 @Entity
 @Data
+@Builder
 public class RegionalScarcity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

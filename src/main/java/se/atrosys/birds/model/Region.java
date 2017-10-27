@@ -13,4 +13,7 @@ public class Region {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
+
+	private String code;
+	private String name;
 }

@@ -34,6 +34,9 @@ dependencies {
 
 	compile group: 'com.flickr4java', name: 'flickr4java', version: '2.17'
 
+	// https://mvnrepository.com/artifact/org.jsoup/jsoup
+	compile group: 'org.jsoup', name: 'jsoup', version: '1.10.3'
+
 	runtime('com.h2database:h2')
 //	runtime('org.postgresql:postgresql')
 	compileOnly('org.projectlombok:lombok')
