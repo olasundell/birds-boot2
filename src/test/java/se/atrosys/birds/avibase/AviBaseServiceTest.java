@@ -3,6 +3,7 @@ package se.atrosys.birds.avibase;
 import org.jsoup.Jsoup;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResourceLoader;
@@ -34,6 +35,7 @@ public class AviBaseServiceTest {
 	}
 
 	@Test
+	@Ignore("This is used to create all avibase files, not needed unless regeneration of all files wanted")
 	public void completeRun() throws IOException {
 		List<Region> regions = new AviBaseRegionService().readRegions();
 
