@@ -1,0 +1,452 @@
+[
+   {
+      "regionName" : "North America",
+      "region" : "NAM",
+      "regionType2" : "Continent",
+      "regionType" : 1
+   },
+   {
+      "regionType" : 2,
+      "regionType2" : "Major Region",
+      "region" : "NA1",
+      "regionName" : "North America (US+CA)"
+   },
+   {
+      "regionType" : 2,
+      "regionType2" : "Major Region",
+      "region" : "AOU",
+      "regionName" : "Amer. Ornithol. Union"
+   },
+   {
+      "regionName" : "Amer. Birding Association",
+      "regionType" : 2,
+      "region" : "ABA",
+      "regionType2" : "Major Region"
+   },
+   {
+      "regionName" : "Central America",
+      "regionType" : 1,
+      "regionType2" : "Continent",
+      "region" : "CAM"
+   },
+   {
+      "regionType2" : "Major Region",
+      "region" : "CAR",
+      "regionType" : 2,
+      "regionName" : "Caribbean (West Indies)"
+   },
+   {
+      "regionType2" : "Major Region",
+      "region" : "SCSCB",
+      "regionType" : 2,
+      "regionName" : "Society for the Conservation and Study of Caribbean Birds (SCSCB)"
+   },
+   {
+      "regionName" : "Greater Antilles",
+      "regionType" : 2,
+      "regionType2" : "Major Region",
+      "region" : "GRA"
+   },
+   {
+      "regionName" : "Lesser Antilles",
+      "region" : "LEA",
+      "regionType2" : "Major Region",
+      "regionType" : 2
+   },
+   {
+      "regionType" : 2,
+      "regionType2" : "Major Region",
+      "region" : "WIN",
+      "regionName" : "Windward Islands"
+   },
+   {
+      "regionName" : "Leeward Islands",
+      "regionType" : 2,
+      "region" : "LEE",
+      "regionType2" : "Major Region"
+   },
+   {
+      "regionType2" : "Island",
+      "region" : "HIS",
+      "regionType" : 2,
+      "regionName" : "Hispaniola"
+   },
+   {
+      "regionType" : 2,
+      "regionType2" : "Island group",
+      "region" : "VIR",
+      "regionName" : "Virgin Islands"
+   },
+   {
+      "regionType" : 2,
+      "region" : "GAD",
+      "regionType2" : "Island group",
+      "regionName" : "Guadeloupe, Saint-Martin and Saint-Barthélémy"
+   },
+   {
+      "regionName" : "Netherlands Antilles",
+      "region" : "NAN",
+      "regionType2" : "Former Country",
+      "regionType" : 2
+   },
+   {
+      "regionName" : "South America",
+      "regionType" : 1,
+      "region" : "SAM",
+      "regionType2" : "Continent"
+   },
+   {
+      "regionName" : "Guyanas",
+      "regionType" : 2,
+      "regionType2" : "Major Region",
+      "region" : "GUY"
+   },
+   {
+      "regionType2" : "Continent",
+      "region" : "EUR",
+      "regionType" : 1,
+      "regionName" : "Europe"
+   },
+   {
+      "regionName" : "Continental Europe",
+      "regionType2" : "Continent",
+      "region" : "EUC",
+      "regionType" : 2
+   },
+   {
+      "regionName" : "Eastern Europe",
+      "region" : "EUE",
+      "regionType2" : "Major Region",
+      "regionType" : 2
+   },
+   {
+      "regionName" : "Western Europe",
+      "regionType2" : "Major Region",
+      "region" : "EUO",
+      "regionType" : 2
+   },
+   {
+      "regionName" : "Scandinavia",
+      "regionType" : 2,
+      "region" : "SCN",
+      "regionType2" : "Major Region"
+   },
+   {
+      "regionName" : "Britain and Ireland",
+      "regionType" : 2,
+      "region" : "BR1",
+      "regionType2" : "Major Region"
+   },
+   {
+      "regionName" : "British Islands",
+      "regionType" : 2,
+      "regionType2" : "Major Region",
+      "region" : "BRI"
+   },
+   {
+      "regionType" : 2,
+      "regionType2" : "Island",
+      "region" : "IRE",
+      "regionName" : "Ireland (Island)"
+   },
+   {
+      "regionName" : "Baltic",
+      "regionType2" : "Major Region",
+      "region" : "BLT",
+      "regionType" : 2
+   },
+   {
+      "regionType" : 2,
+      "region" : "CZK",
+      "regionType2" : "Major Region",
+      "regionName" : "Czechoslovakia"
+   },
+   {
+      "region" : "BAL",
+      "regionType2" : "Major Region",
+      "regionType" : 2,
+      "regionName" : "Balkans"
+   },
+   {
+      "regionType2" : "Major Region",
+      "region" : "YUG",
+      "regionType" : 2,
+      "regionName" : "Former Yugoslavia"
+   },
+   {
+      "regionType2" : "Major Region",
+      "region" : "SMT",
+      "regionType" : 2,
+      "regionName" : "Serbia, Kosovo and Montenegro"
+   },
+   {
+      "regionName" : "Serbia and Kosovo",
+      "region" : "SER",
+      "regionType2" : "Country",
+      "regionType" : 2
+   },
+   {
+      "regionType" : 1,
+      "region" : "AFR",
+      "regionType2" : "Continent",
+      "regionName" : "Africa"
+   },
+   {
+      "regionName" : "Continental Africa",
+      "regionType2" : "Continent",
+      "region" : "AFC",
+      "regionType" : 1
+   },
+   {
+      "regionName" : "Northern Africa",
+      "regionType" : 2,
+      "region" : "AFN",
+      "regionType2" : "Major Region"
+   },
+   {
+      "regionName" : "Western Africa",
+      "regionType" : 2,
+      "region" : "AFW",
+      "regionType2" : "Major Region"
+   },
+   {
+      "regionType" : 2,
+      "region" : "MSN",
+      "regionType2" : "Major Region",
+      "regionName" : "Mauritania and Senegal"
+   },
+   {
+      "regionType2" : "Major Region",
+      "region" : "SNG",
+      "regionType" : 2,
+      "regionName" : "Senegambia"
+   },
+   {
+      "regionType" : 2,
+      "regionType2" : "Major Region",
+      "region" : "AFE",
+      "regionName" : "Eastern Africa"
+   },
+   {
+      "regionName" : "Sudan (incl. South Sudan)",
+      "regionType" : 2,
+      "regionType2" : "Major Region",
+      "region" : "SUD"
+   },
+   {
+      "regionName" : "Ethiopia and Eritrea",
+      "regionType" : 2,
+      "region" : "EER",
+      "regionType2" : "Major Region"
+   },
+   {
+      "regionName" : "Southern Africa",
+      "regionType2" : "Major Region",
+      "region" : "AFS",
+      "regionType" : 2
+   },
+   {
+      "regionName" : "African Islands",
+      "regionType" : 2,
+      "regionType2" : "Major Region",
+      "region" : "AFI"
+   },
+   {
+      "regionName" : "Gulf of Guinea Islands",
+      "regionType" : 2,
+      "regionType2" : "Major Region",
+      "region" : "GGU"
+   },
+   {
+      "regionName" : "Comoros and Mayotte",
+      "regionType" : 2,
+      "region" : "KYT",
+      "regionType2" : "Major Region"
+   },
+   {
+      "regionName" : "Mauritius and Reunion",
+      "regionType2" : "Major Region",
+      "region" : "MRE",
+      "regionType" : 2
+   },
+   {
+      "regionName" : "Middle East",
+      "region" : "MID",
+      "regionType2" : "Major Region",
+      "regionType" : 1
+   },
+   {
+      "regionType2" : "Major Region",
+      "region" : "ARA",
+      "regionType" : 2,
+      "regionName" : "Arabian Peninsula"
+   },
+   {
+      "regionType" : 1,
+      "regionType2" : "Continent",
+      "region" : "ASI",
+      "regionName" : "Asia"
+   },
+   {
+      "regionName" : "Soviet Union",
+      "region" : "SU",
+      "regionType2" : "Major Region",
+      "regionType" : 2
+   },
+   {
+      "regionName" : "Turkestan",
+      "regionType" : 2,
+      "regionType2" : "Major Region",
+      "region" : "TUR"
+   },
+   {
+      "region" : "SAS",
+      "regionType2" : "Major Region",
+      "regionType" : 2,
+      "regionName" : "South Asia"
+   },
+   {
+      "regionName" : "Pakistan/India/Bengladesh",
+      "regionType" : 2,
+      "region" : "IPB",
+      "regionType2" : "Major Region"
+   },
+   {
+      "regionName" : "Korea (North & South)",
+      "regionType2" : "Major Region",
+      "region" : "KOR",
+      "regionType" : 2
+   },
+   {
+      "regionName" : "Southeast Asia",
+      "regionType" : 2,
+      "regionType2" : "Major Region",
+      "region" : "SEA"
+   },
+   {
+      "regionName" : "Indochina",
+      "regionType2" : "Major Region",
+      "region" : "IND",
+      "regionType" : 2
+   },
+   {
+      "regionName" : "Island of Borneo",
+      "regionType" : 2,
+      "region" : "BOR",
+      "regionType2" : "Island"
+   },
+   {
+      "regionType" : 2,
+      "regionType2" : "Island",
+      "region" : "TIM",
+      "regionName" : "Island of Timor"
+   },
+   {
+      "regionName" : "Oceania",
+      "region" : "OCE",
+      "regionType2" : "Continent",
+      "regionType" : 1
+   },
+   {
+      "regionName" : "Australasia",
+      "regionType" : 1,
+      "region" : "AUS",
+      "regionType2" : "Continent"
+   },
+   {
+      "regionName" : "Island of New Guinea",
+      "regionType" : 2,
+      "region" : "NGU",
+      "regionType2" : "Island"
+   },
+   {
+      "regionType" : 2,
+      "region" : "POL",
+      "regionType2" : "Major Region",
+      "regionName" : "Polynesia"
+   },
+   {
+      "regionName" : "Melanesia",
+      "region" : "MEL",
+      "regionType2" : "Major Region",
+      "regionType" : 2
+   },
+   {
+      "regionName" : "Micronesia",
+      "regionType" : 2,
+      "regionType2" : "Major Region",
+      "region" : "MIC"
+   },
+   {
+      "regionName" : "Samoa Islands",
+      "regionType2" : "Major Region",
+      "region" : "SAO",
+      "regionType" : 2
+   },
+   {
+      "region" : "MAR",
+      "regionType2" : "Major Region",
+      "regionType" : 2,
+      "regionName" : "Mariana Islands"
+   },
+   {
+      "regionType2" : "Major Region",
+      "region" : "PAC",
+      "regionType" : 1,
+      "regionName" : "Pacific Islands"
+   },
+   {
+      "regionName" : "Antarctic Islands",
+      "regionType" : 2,
+      "regionType2" : "Major Region",
+      "region" : "ANT"
+   },
+   {
+      "region" : "HOL",
+      "regionType2" : "Major Region",
+      "regionType" : 1,
+      "regionName" : "Holarctic"
+   },
+   {
+      "regionName" : "Palearctic",
+      "regionType" : 1,
+      "regionType2" : "Major Region",
+      "region" : "PAL"
+   },
+   {
+      "regionName" : "Western Palearctic",
+      "regionType" : 1,
+      "regionType2" : "Major Region",
+      "region" : "WPA"
+   },
+   {
+      "regionName" : "Nearctic",
+      "regionType2" : "Major Region",
+      "region" : "NEA",
+      "regionType" : 1
+   },
+   {
+      "regionName" : "Antarctic Ocean",
+      "regionType2" : "Ocean",
+      "region" : "OAQ",
+      "regionType" : 1
+   },
+   {
+      "regionName" : "Atlantic Ocean",
+      "region" : "OAT",
+      "regionType2" : "Ocean",
+      "regionType" : 1
+   },
+   {
+      "regionType2" : "Ocean",
+      "region" : "OIN",
+      "regionType" : 1,
+      "regionName" : "Indian Ocean"
+   },
+   {
+      "regionName" : "Pacific Ocean",
+      "region" : "OPA",
+      "regionType2" : "Ocean",
+      "regionType" : 1
+   }
+]

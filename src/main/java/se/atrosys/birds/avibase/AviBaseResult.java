@@ -15,5 +15,5 @@ import java.util.List;
 @Data
 public class AviBaseResult {
 	private Region region;
-	private List<RegionalScarcity> birds;
+	private List<AviBaseRegionalScarcity> regionalScarcities;
 }

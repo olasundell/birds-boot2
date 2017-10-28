@@ -4,23 +4,20 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
-import se.atrosys.birds.model.Bird;
-import se.atrosys.birds.model.Family;
-import se.atrosys.birds.model.Genus;
-import se.atrosys.birds.model.Language;
+import se.atrosys.birds.avibase.AviBaseRegionService;
+import se.atrosys.birds.avibase.AviBaseResult;
+import se.atrosys.birds.avibase.AviBaseService;
 import se.atrosys.birds.model.Order;
-import se.atrosys.birds.repository.BirdRepository;
-import se.atrosys.birds.repository.FamilyRepository;
-import se.atrosys.birds.repository.GenusRepository;
-import se.atrosys.birds.repository.LanguageRepository;
-import se.atrosys.birds.repository.OrderRepository;
+import se.atrosys.birds.model.Region;
+import se.atrosys.birds.repository.RegionRepository;
+import se.atrosys.birds.service.BirdPopulator;
 import se.atrosys.birds.xml.model.IocList;
 import se.atrosys.birds.xml.service.BirdsFromXmlService;
 import se.atrosys.birds.xml.service.IocListConverter;
 
 import javax.annotation.PostConstruct;
+import java.io.IOException;
 import java.util.List;
-import java.util.function.Consumer;
 
 /**
  * TODO write documentation
@@ -28,71 +25,52 @@ import java.util.function.Consumer;
 @Configuration
 public class PopulateConfig {
 	private final BirdsFromXmlService xmlService;
-	private final BirdRepository birdRepository;
-	private final FamilyRepository familyRepository;
-	private final GenusRepository genusRepository;
-	private final OrderRepository orderRepository;
-	private final LanguageRepository languageRepository;
+	private final AviBaseRegionService aviBaseRegionService;
+	private final RegionRepository regionRepository;
+	private final BirdPopulator birdPopulator;
+	private final AviBaseService aviBaseService;
+
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
 	@Autowired
 	public PopulateConfig(BirdsFromXmlService xmlService,
-	                      BirdRepository birdRepository,
-	                      FamilyRepository familyRepository,
-	                      GenusRepository genusRepository,
-	                      OrderRepository orderRepository, LanguageRepository languageRepository) {
+	                      AviBaseRegionService aviBaseRegionService,
+	                      RegionRepository regionRepository,
+	                      BirdPopulator birdPopulator,
+	                      AviBaseService aviBaseService) {
 
 		this.xmlService = xmlService;
-		this.birdRepository = birdRepository;
-		this.familyRepository = familyRepository;
-		this.genusRepository = genusRepository;
-		this.orderRepository = orderRepository;
-		this.languageRepository = languageRepository;
+		this.aviBaseRegionService = aviBaseRegionService;
+		this.regionRepository = regionRepository;
+		this.birdPopulator = birdPopulator;
+		this.aviBaseService = aviBaseService;
 	}
 
 	@PostConstruct
 	public void populate() {
 		logger.info("Populating...");
+		populateRegions();
+
 		IocList iocList = xmlService.readIocList();
 		iocList = xmlService.readCsv(iocList);
 
 		List<Order> orders = new IocListConverter(xmlService.languages(iocList)).convertIocList(iocList);
 
-//		saveOrder(orders.get(0));
-		orders.forEach(this::saveOrder);
+//		birdPopulator.saveOrder(orders.get(0));
+		orders.forEach(birdPopulator::saveOrder);
+//		regionRepository.findAll().forEach(this::setBirdRegions);
 	}
 
-	private void saveOrder(Order o) {
-		logger.info("Saving order {}", o.getName());
-
-		Order order = orderRepository.save(o);
-		o.getFamilies().forEach(
-			saveFamily(order)
-		);
+	private void setBirdRegions(Region region) {
+		try {
+			AviBaseResult result = aviBaseService.getAviBaseStuff(region);
+		} catch (IOException e) {
+			logger.error("Could not read from avi-base", e);
+		}
 	}
 
-	private Consumer<Family> saveFamily(Order order) {
-		return f -> {
-			f.setOrder(order);
-			Family family = familyRepository.save(f);
-			f.getGenus().forEach(
-				g -> saveGenus(family, g)
-			);
-		};
+	private void populateRegions() {
+		regionRepository.save(aviBaseRegionService.readRegions());
 	}
 
-	private void saveGenus(Family family, Genus g) {
-		g.setFamily(family);
-		Genus genus = genusRepository.save(g);
-		g.getBirds().forEach(
-			saveBird(genus)
-		);
-	}
-
-	private Consumer<Bird> saveBird(Genus genus) {
-		return b ->{
-			b.setGenus(genus);
-			birdRepository.save(b);
-		};
-	}
 }
