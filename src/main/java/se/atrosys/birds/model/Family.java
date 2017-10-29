@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -22,6 +23,7 @@ import java.util.List;
 @Entity
 @Data
 @Builder
+@ToString(exclude = {"order", "genus"})
 @AllArgsConstructor
 @NoArgsConstructor
 public class Family {

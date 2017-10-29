@@ -5,7 +5,6 @@ import se.atrosys.birds.flickr.FlickrService;
 import se.atrosys.birds.model.Bird;
 import se.atrosys.birds.model.BirdPhoto;
 import se.atrosys.birds.model.Response;
-import se.atrosys.birds.repository.BirdRepository;
 import se.atrosys.birds.xenocanto.XenoCantoService;
 
 import javax.xml.bind.JAXBException;
@@ -19,13 +18,13 @@ import java.util.stream.Collectors;
  */
 @Component
 public class ResponseService {
-	private final BirdRepository birdRepository;
+	private final BirdService birdService;
 	private final FlickrService flickrService;
 	private final XenoCantoService xenoCantoService;
 
-	public ResponseService(BirdRepository birdRepository,
+	public ResponseService(BirdService birdService,
 	                       FlickrService flickrService, XenoCantoService xenoCantoService) {
-		this.birdRepository = birdRepository;
+		this.birdService = birdService;
 		this.flickrService = flickrService;
 		this.xenoCantoService = xenoCantoService;
 	}
@@ -35,7 +34,7 @@ public class ResponseService {
 		List<BirdPhoto> pictures = Collections.emptyList();
 
 		while (pictures.isEmpty()) {
-			bird = birdRepository.findOne(birdRepository.randomId());
+			bird = birdService.findRandom();
 			pictures = flickrService.getPictures(bird);
 		}
 

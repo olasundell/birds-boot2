@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -23,6 +24,7 @@ import java.util.List;
 @Entity
 @Builder
 @Data
+@ToString(exclude = { "family", "birds" })
 @AllArgsConstructor
 @NoArgsConstructor
 public class Genus {

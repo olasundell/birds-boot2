@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 public class AviBaseRegionService {
 	public List<Region> readRegions() {
 		try {
-			final File file = new ClassPathResource("regions.json").getFile();
+			final File file = new ClassPathResource("regions/regions.json").getFile();
 			final List<AviBaseRegion> regions = new ObjectMapper().readValue(file, new RegionListTypeReference());
 
 			return regions.stream()

@@ -1,5 +1,7 @@
 package se.atrosys.birds.avibase;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import lombok.Builder;
 import lombok.Data;
 import se.atrosys.birds.model.Bird;
@@ -13,7 +15,11 @@ import java.util.List;
  */
 @Builder
 @Data
+@JsonDeserialize(builder = AviBaseResult.AviBaseResultBuilder.class)
 public class AviBaseResult {
 	private Region region;
 	private List<AviBaseRegionalScarcity> regionalScarcities;
+
+	@JsonPOJOBuilder(withPrefix = "")
+	public static class AviBaseResultBuilder {}
 }
