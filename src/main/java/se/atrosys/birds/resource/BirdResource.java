@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import se.atrosys.birds.exception.BirdFlickrException;
 import se.atrosys.birds.model.Bird;
 import se.atrosys.birds.model.Response;
 import se.atrosys.birds.service.BirdService;
@@ -31,12 +32,10 @@ public class BirdResource {
 	}
 
 	@GetMapping("/random")
-	public Response random(@RequestParam(required = false, name ="lang", defaultValue = "english") String language) throws JAXBException {
+	public Response random(@RequestParam(required = false, name = "lang", defaultValue = "english") String language) throws BirdFlickrException {
 		Response response = responseService.createResponse(language);
 
-		logger.info("Getting a random bird, {} {}",
-			response.getActualBird().getGenusName(),
-			response.getActualBird().getScientificName());
+		logger.info("Getting a random bird, {}", response.getActualBird().getScientificName());
 
 		return response;
 	}

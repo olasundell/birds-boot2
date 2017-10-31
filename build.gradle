@@ -37,8 +37,9 @@ dependencies {
 	// https://mvnrepository.com/artifact/org.jsoup/jsoup
 	compile group: 'org.jsoup', name: 'jsoup', version: '1.10.3'
 
+	runtime group: 'com.zaxxer', name: 'HikariCP', version: '2.6.1'
 	runtime('com.h2database:h2')
-//	runtime('org.postgresql:postgresql')
+	runtime('org.postgresql:postgresql')
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }

@@ -56,13 +56,14 @@ public class RegionScarcityService {
 		AviBaseResult result = readRegionFile(region);
 
 		return result.getRegionalScarcities()
-			.parallelStream()
+//			.parallelStream()
+			.stream()
 			.map(r -> mapRegionalScarcity(region, r))
 			.collect(Collectors.toList());
 	}
 
 	protected AviBaseResult readRegionFile(Region region) {
-		final ClassPathResource classPathResource = new ClassPathResource("regions/" + region.getCode() + ".json");
+		final ClassPathResource classPathResource = new ClassPathResource("regions/" + region.getCode() + "-ioc.json");
 		try {
 			AviBaseResult read = new ObjectMapper().readValue(classPathResource.getFile(), AviBaseResult.class);
 			return read;
@@ -73,6 +74,12 @@ public class RegionScarcityService {
 
 	private RegionalScarcity mapRegionalScarcity(Region region, AviBaseRegionalScarcity aviBaseRegionalScarcity) {
 		Bird bird = birdService.findByScientificName(aviBaseRegionalScarcity.getScientificName());
+		if (bird == null) {
+			throw new IllegalArgumentException(aviBaseRegionalScarcity.getScientificName() + " has no corresponding bird in database");
+		}
+		if (bird.getId() == null) {
+			throw new IllegalStateException("Bird with sciname " + bird.getScientificName() + " has no id");
+		}
 
 		return RegionalScarcity.builder()
 			.bird(bird)

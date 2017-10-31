@@ -2,6 +2,7 @@ package se.atrosys.birds.flickr;
 
 import org.junit.Assert;
 import org.junit.Test;
+import se.atrosys.birds.exception.BirdFlickrException;
 import se.atrosys.birds.model.Bird;
 import se.atrosys.birds.model.BirdPhoto;
 
@@ -16,7 +17,7 @@ import static org.junit.Assert.*;
  */
 public class FlickrServiceTest {
 	@Test
-	public void shouldDoStuff() throws JAXBException {
+	public void shouldDoStuff() throws BirdFlickrException {
 		FlickrService service = new FlickrService(new FileFetcher());
 		List<BirdPhoto> result = service.getPictures(Bird.builder()
 			.scientificName("Pica pica")

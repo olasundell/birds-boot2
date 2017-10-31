@@ -42,7 +42,7 @@ public class AviBaseServiceTest {
 		List<AviBaseResult> aviBaseResults;
 
 		for (Region region: regions) {
-			service.writeToFile("/tmp/" + region.getCode() + ".json", service.getAviBaseStuff(region));
+			service.writeToFile("/tmp/" + region.getCode() + "-ioc.json", service.getAviBaseStuff(region));
 		}
 	}
 

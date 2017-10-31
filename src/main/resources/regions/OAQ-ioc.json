@@ -1,0 +1,29 @@
+{
+  "region" : {
+    "id" : null,
+    "code" : "OAQ",
+    "name" : "Antarctic Ocean"
+  },
+  "regionalScarcities" : [ {
+    "scientificName" : "Pygoscelis antarcticus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Thalassoica antarctica",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Daption capense",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Procellaria westlandica",
+    "scarcities" : [ "VULNERABLE" ]
+  }, {
+    "scientificName" : "Pelecanoides magellani",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Pelecanoides georgicus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Stercorarius antarcticus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  } ]
+}

@@ -60,6 +60,7 @@ public class BirdPopulator {
 	private void saveGenus(Family family, Genus g) {
 		g.setFamily(family);
 		Genus genus = genusRepository.save(g);
+//		g.getBirds().parallelStream().forEach(
 		g.getBirds().forEach(
 			saveBird(genus)
 		);

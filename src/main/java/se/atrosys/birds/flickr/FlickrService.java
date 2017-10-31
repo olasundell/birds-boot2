@@ -10,6 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
+import se.atrosys.birds.exception.BirdFlickrException;
 import se.atrosys.birds.model.Bird;
 import se.atrosys.birds.model.BirdPhoto;
 
@@ -33,10 +34,12 @@ public class FlickrService {
 		this.fileFetcher = fileFetcher;
 	}
 
-//	@Cacheable
-	public List<BirdPhoto> getPictures(Bird model) throws JAXBException {
+	@Cacheable(cacheNames = "flickr", key = "#model.scientificName.toLowerCase()")
+	public List<BirdPhoto> getPictures(Bird model) throws BirdFlickrException {
 		PhotoList<Photo> result = search(model.getScientificName());
-//		String.format("http://farm%s.staticflickr.com/%s/%s_%s.jpg", farm, server, id, secret);
+
+		assert result != null;
+
 		return result.stream()
 			.map(p -> BirdPhoto.builder()
 				.url(p.getUrl())
@@ -49,7 +52,7 @@ public class FlickrService {
 			.collect(Collectors.toList());
 	}
 
-	private PhotoList<Photo> search(String tag) {
+	private PhotoList<Photo> search(String tag) throws BirdFlickrException {
 		String apiKey = "b94821e60fb20b35d9bd8e950a692aaf";
 		String sharedSecret = "40edbd76352c0ce1";
 
@@ -62,8 +65,7 @@ public class FlickrService {
 			return f.getPhotosInterface().search(params, 10, 0);
 		} catch (FlickrException e) {
 			logger.error("Error when flickring", e);
+			throw new BirdFlickrException(e);
 		}
-		return null;
-
 	}
 }

@@ -21,8 +21,11 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Index;
+import javax.persistence.JoinTable;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
 import javax.persistence.Transient;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -41,6 +44,7 @@ import java.util.stream.Collectors;
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonInclude(JsonInclude.Include.NON_NULL)
+@Table(name = "birds", indexes = { @Index(name = "BIRDS_SCINAME_IDX", columnList = "scientificName") })
 public class Bird {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -52,6 +56,7 @@ public class Bird {
 	private String href;
 
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	@JoinTable(indexes = { @Index(name = "birds_bird_names_bird_id_idx", columnList = "bird_id")})
 	@JsonManagedReference
 	private List<BirdName> birdNames;
 
@@ -72,11 +77,13 @@ public class Bird {
 	}
 
 	@OneToMany(cascade = CascadeType.ALL)
+	@JoinTable(indexes = { @Index(name = "birds_regional_scarcity_bird_id_idx", columnList = "bird_id")})
 	private List<RegionalScarcity> regionalScarcity;
 
 	@ElementCollection(targetClass = BreedingRegion.class)
 	@Enumerated(EnumType.STRING)
 	@Builder.Default
+	@JoinTable(indexes = { @Index(name = "bird_breeding_regions_bird_id_idx", columnList = "bird_id")})
 	private List<BreedingRegion> breedingRegions = new ArrayList<>();
 
 	@Transient

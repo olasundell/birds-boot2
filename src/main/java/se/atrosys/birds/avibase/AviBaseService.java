@@ -28,13 +28,13 @@ public class AviBaseService {
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
 	public AviBaseResult getAviBaseStuff(Region region) throws IOException {
-		Document document = Jsoup.connect("http://avibase.bsc-eoc.org/checklist.jsp?region=" + region.getCode() + "&list=clements").get();
+		Document document = Jsoup.connect("http://avibase.bsc-eoc.org/checklist.jsp?region=" + region.getCode() + "&list=ioc").get();
 
 		return createResult(region, document);
 	}
 
 	public void writeToFile(String filename, AviBaseResult result) throws IOException {
-		new ObjectMapper().writeValue(new File(filename), result);
+		new ObjectMapper().writerWithDefaultPrettyPrinter().writeValue(new File(filename), result);
 	}
 
 	protected AviBaseResult createResult(Region region, Document document) {

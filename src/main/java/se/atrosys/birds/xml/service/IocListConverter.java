@@ -55,13 +55,13 @@ public class IocListConverter {
 	private Genus convertGenus(XmlGenus xmlGenus) {
 		return Genus.builder()
 			.name(xmlGenus.getLatinName())
-			.birds(xmlGenus.getSpecies().stream().map(this::convertBird).collect(Collectors.toList()))
+			.birds(xmlGenus.getSpecies().stream().map(s -> convertBird(xmlGenus, s)).collect(Collectors.toList()))
 			.build();
 	}
 
-	private Bird convertBird(XmlSpecies species) {
+	private Bird convertBird(XmlGenus xmlGenus, XmlSpecies species) {
 		return Bird.builder()
-			.scientificName(species.getLatinName())
+			.scientificName(xmlGenus.getLatinName().toLowerCase() + " " + species.getLatinName())
 			.breedingRegions(findBreedingRegions(species))
 			.birdNames(species.getNames().entrySet().stream().map(this::convertBirdName).collect(Collectors.toList()))
 			.build();

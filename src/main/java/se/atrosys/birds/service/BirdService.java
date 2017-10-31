@@ -9,6 +9,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Component;
 import se.atrosys.birds.model.Bird;
 import se.atrosys.birds.repository.BirdRepository;
+import se.atrosys.birds.repository.GenusRepository;
 
 /**
  * TODO write documentation
@@ -25,16 +26,20 @@ public class BirdService {
 	@Cacheable(cacheNames= "birds", key = "#scientificName.toLowerCase()")
 	public Bird findByScientificName(String scientificName) {
 		logger.trace("Finding by scientific name {}", scientificName);
-		return birdRepository.findByScientificName(scientificName);
+		return birdRepository.findByScientificName(scientificName.toLowerCase());
 	}
 
-	@CachePut(cacheNames = "birds", key = "#bird.scientificName.toLowerCase()")
 	public Bird save(Bird bird) {
 		if (bird == null) {
 			throw new IllegalArgumentException("Bird is null");
 		}
 
-		return birdRepository.save(bird);
+		return cachePut(birdRepository.save(bird));
+	}
+
+	@CachePut(cacheNames = "birds", key = "#bird.scientificName.toLowerCase()")
+	public Bird cachePut(Bird bird) {
+		return bird;
 	}
 
 	public Bird findRandom() {

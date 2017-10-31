@@ -1,0 +1,2567 @@
+{
+  "region" : {
+    "id" : null,
+    "code" : "NGU",
+    "name" : "Island of New Guinea"
+  },
+  "regionalScarcities" : [ {
+    "scientificName" : "Casuarius casuarius",
+    "scarcities" : [ "VULNERABLE" ]
+  }, {
+    "scientificName" : "Casuarius bennetti",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Casuarius unappendiculatus",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Aepypodius arfakianus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Aepypodius bruijnii",
+    "scarcities" : [ "ENDANGERED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Talegalla cuvieri",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Talegalla fuscirostris",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Talegalla jobiensis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Eulipoa wallacei",
+    "scarcities" : [ "VULNERABLE" ]
+  }, {
+    "scientificName" : "Megapodius freycinet",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Megapodius geelvinkianus",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Megapodius decollatus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Megapodius eremita",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Megapodius reinwardt",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Synoicus ypsilophorus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Synoicus chinensis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Anurophasis monorthonyx",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Gallus gallus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Anseranas semipalmata",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Dendrocygna guttata",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Dendrocygna eytoni",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Dendrocygna arcuata",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Cygnus atratus",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Radjah radjah",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Nettapus coromandelianus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Nettapus pulchellus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Chenonetta jubata",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Aythya australis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Salvadorina waigiuensis",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Spatula querquedula",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Mareca penelope",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Anas superciliosa",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Anas gibberifrons",
+    "scarcities" : [ "NEAR_THREATENED" ]
+  }, {
+    "scientificName" : "Anas gracilis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Anas acuta",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Tachybaptus ruficollis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Tachybaptus novaehollandiae",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Phaethon rubricauda",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Phaethon lepturus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Columba livia",
+    "scarcities" : [ "INTRODUCED" ]
+  }, {
+    "scientificName" : "Columba vitiensis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Spilopelia chinensis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Macropygia amboinensis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Macropygia nigrirostris",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Macropygia mackinlayi",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Reinwardtoena reinwardti",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Henicophaps albifrons",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Gallicolumba rufigula",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Alopecoenas jobiensis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Alopecoenas beccarii",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Alopecoenas johannae",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Geopelia striata",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Geopelia placida",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Geopelia humeralis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Trugon terrestris",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Otidiphaps aruensis",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Otidiphaps nobilis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Otidiphaps cervicalis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Otidiphaps insularis",
+    "scarcities" : [ "ENDANGERED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Goura cristata",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Goura sclaterii",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Goura scheepmakeri",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Goura victoria",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Caloenas nicobarica",
+    "scarcities" : [ "NEAR_THREATENED" ]
+  }, {
+    "scientificName" : "Chalcophaps indica",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Chalcophaps longirostris",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Chalcophaps stephani",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ducula perspicillata",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ducula concinna",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ducula pacifica",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ducula myristicivora",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ducula geelvinkiana",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ducula rufigaster",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ducula chalconota",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ducula pistrinaria",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ducula pinon",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ducula salvadorii",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ducula mullerii",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ducula zoeae",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ducula bicolor",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ducula spilorrhoa",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Megaloprepia magnifica",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ptilinopus nainus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ptilinopus superbus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ptilinopus rivoli",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ptilinopus speciosus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ptilinopus wallacii",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ptilinopus aurantiifrons",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ptilinopus ornatus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ptilinopus gestroi",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ptilinopus perlatus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ptilinopus iozonus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ptilinopus viridis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ptilinopus pulchellus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ptilinopus coronulatus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ptilinopus regina",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Gymnophaps albertisii",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Lopholaimus antarcticus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Podargus ocellatus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Podargus papuensis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Eurostopodus mystacalis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Eurostopodus nigripennis",
+    "scarcities" : [ "VULNERABLE" ]
+  }, {
+    "scientificName" : "Eurostopodus archboldi",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Eurostopodus papuensis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Caprimulgus jotaka",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Caprimulgus macrurus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Aegotheles insignis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Aegotheles tatei",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Aegotheles cristatus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Aegotheles affinis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Aegotheles bennettii",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Aegotheles wallacii",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Aegotheles archboldi",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Aegotheles albertisi",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Hemiprocne mystacea",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Mearnsia novaeguineae",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Hirundapus caudacutus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Collocalia esculenta",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Aerodramus papuensis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Aerodramus nuditarsus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Aerodramus hirundinaceus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Aerodramus vanikorensis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Apus pacificus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Centropus menbeki",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Centropus chalybeus",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Centropus bernsteini",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Centropus phasianinus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Microdynamis parva",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Eudynamys orientalis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Scythrops novaehollandiae",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Chalcites megarhynchus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Chalcites basalis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Chalcites osculans",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Chalcites ruficollis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Chalcites lucidus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Chalcites meyerii",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Chalcites minutillus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Chalcites crassirostris",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Cacomantis castaneiventris",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Cacomantis flabelliformis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Cacomantis variolosus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Heteroscenes pallidus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Caliechthrus leucolophus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Cuculus saturatus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Rallicula rubra",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Rallicula leucospila",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Rallicula forbesi",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Rallicula mayri",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Rallina tricolor",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Lewinia pectoralis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Eulabeornis castaneoventris",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Hypotaenidia torquata",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Hypotaenidia philippensis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Gymnocrex plumbeiventris",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Zapornia pusilla",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Zapornia tabuensis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Amaurornis moluccana",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Amaurornis cinerea",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Megacrex inepta",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Porphyrio porphyrio",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Gallinula tenebrosa",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Fulica atra",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Antigone rubicunda",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ardeotis australis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Oceanites oceanicus",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Pelagodroma marina",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Fregetta grallaria",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Fregetta tropica",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Hydrobates matsudairae",
+    "scarcities" : [ "VULNERABLE" ]
+  }, {
+    "scientificName" : "Macronectes giganteus",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Pachyptila desolata",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Pachyptila turtur",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Pterodroma leucoptera",
+    "scarcities" : [ "RARE_ACCIDENTAL", "VULNERABLE" ]
+  }, {
+    "scientificName" : "Pterodroma pycrofti",
+    "scarcities" : [ "RARE_ACCIDENTAL", "VULNERABLE" ]
+  }, {
+    "scientificName" : "Pterodroma neglecta",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Pterodroma heraldica",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ardenna pacifica",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ardenna tenuirostris",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Ardenna grisea",
+    "scarcities" : [ "NEAR_THREATENED" ]
+  }, {
+    "scientificName" : "Ardenna carneipes",
+    "scarcities" : [ "NEAR_THREATENED" ]
+  }, {
+    "scientificName" : "Calonectris leucomelas",
+    "scarcities" : [ "NEAR_THREATENED" ]
+  }, {
+    "scientificName" : "Puffinus nativitatis",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Puffinus bailloni",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Puffinus heinrothi",
+    "scarcities" : [ "VULNERABLE" ]
+  }, {
+    "scientificName" : "Pseudobulweria becki",
+    "scarcities" : [ "RARE_ACCIDENTAL", "CRITICALLY_ENDANGERED" ]
+  }, {
+    "scientificName" : "Pseudobulweria rostrata",
+    "scarcities" : [ "NEAR_THREATENED" ]
+  }, {
+    "scientificName" : "Bulweria bulwerii",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ephippiorhynchus asiaticus",
+    "scarcities" : [ "NEAR_THREATENED" ]
+  }, {
+    "scientificName" : "Platalea flavipes",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Platalea regia",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Threskiornis moluccus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Threskiornis spinicollis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Plegadis falcinellus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Zonerodius heliosylus",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ixobrychus dubius",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ixobrychus sinensis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ixobrychus cinnamomeus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ixobrychus flavicollis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Nycticorax caledonicus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Butorides striata",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Bubulcus ibis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ardea pacifica",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ardea sumatrana",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ardea alba",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ardea intermedia",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ardea plumifera",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Egretta picata",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Egretta novaehollandiae",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Egretta garzetta",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Egretta sacra",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Pelecanus conspicillatus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Fregata ariel",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Fregata minor",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Papasula abbotti",
+    "scarcities" : [ "RARE_ACCIDENTAL", "ENDANGERED" ]
+  }, {
+    "scientificName" : "Sula sula",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Sula leucogaster",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Sula dactylatra",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Microcarbo melanoleucos",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Phalacrocorax carbo",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Phalacrocorax sulcirostris",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Phalacrocorax varius",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Anhinga melanogaster",
+    "scarcities" : [ "NEAR_THREATENED" ]
+  }, {
+    "scientificName" : "Anhinga novaehollandiae",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Burhinus grallarius",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Esacus magnirostris",
+    "scarcities" : [ "NEAR_THREATENED" ]
+  }, {
+    "scientificName" : "Haematopus longirostris",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Himantopus himantopus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Pluvialis squatarola",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Pluvialis fulva",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Charadrius hiaticula",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Charadrius dubius",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Charadrius ruficapillus",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Charadrius peronii",
+    "scarcities" : [ "NEAR_THREATENED" ]
+  }, {
+    "scientificName" : "Charadrius mongolus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Charadrius leschenaultii",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Charadrius veredus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Elseyornis melanops",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Vanellus miles",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Erythrogonys cinctus",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Irediparra gallinacea",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Numenius phaeopus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Numenius minutus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Numenius arquata",
+    "scarcities" : [ "NEAR_THREATENED" ]
+  }, {
+    "scientificName" : "Numenius madagascariensis",
+    "scarcities" : [ "ENDANGERED" ]
+  }, {
+    "scientificName" : "Limosa lapponica",
+    "scarcities" : [ "NEAR_THREATENED" ]
+  }, {
+    "scientificName" : "Limosa limosa",
+    "scarcities" : [ "NEAR_THREATENED" ]
+  }, {
+    "scientificName" : "Arenaria interpres",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Calidris tenuirostris",
+    "scarcities" : [ "ENDANGERED" ]
+  }, {
+    "scientificName" : "Calidris canutus",
+    "scarcities" : [ "NEAR_THREATENED" ]
+  }, {
+    "scientificName" : "Calidris pugnax",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Calidris falcinellus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Calidris acuminata",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Calidris ferruginea",
+    "scarcities" : [ "NEAR_THREATENED" ]
+  }, {
+    "scientificName" : "Calidris subminuta",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Calidris ruficollis",
+    "scarcities" : [ "NEAR_THREATENED" ]
+  }, {
+    "scientificName" : "Calidris alba",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Calidris bairdii",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Calidris minuta",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Calidris subruficollis",
+    "scarcities" : [ "RARE_ACCIDENTAL", "NEAR_THREATENED" ]
+  }, {
+    "scientificName" : "Calidris melanotos",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Calidris mauri",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Limnodromus semipalmatus",
+    "scarcities" : [ "RARE_ACCIDENTAL", "NEAR_THREATENED" ]
+  }, {
+    "scientificName" : "Limnodromus scolopaceus",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Scolopax rosenbergii",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Gallinago hardwickii",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Gallinago stenura",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Gallinago megala",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Phalaropus lobatus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Xenus cinereus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Actitis hypoleucos",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Tringa ochropus",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Tringa brevipes",
+    "scarcities" : [ "NEAR_THREATENED" ]
+  }, {
+    "scientificName" : "Tringa incana",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Tringa nebularia",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Tringa totanus",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Tringa glareola",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Tringa stagnatilis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Turnix maculosus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Turnix pyrrhothorax",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Stiltia isabella",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Glareola maldivarum",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Anous stolidus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Anous tenuirostris",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Anous minutus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Gygis alba",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Larus ridibundus",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Larus novaehollandiae",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Onychoprion fuscatus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Onychoprion anaethetus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Onychoprion lunatus",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Sternula albifrons",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Gelochelidon nilotica",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Gelochelidon macrotarsa",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Hydroprogne caspia",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Chlidonias hybrida",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Chlidonias leucopterus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Chlidonias niger",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Sterna dougallii",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Sterna sumatrana",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Sterna hirundo",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Thalasseus bengalensis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Thalasseus bergii",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Stercorarius longicaudus",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Stercorarius parasiticus",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Stercorarius pomarinus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Catharacta maccormicki",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Tyto longimembris",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Tyto tenebricosa",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Tyto multipunctata",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Tyto novaehollandiae",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Tyto alba",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ninox rufa",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ninox connivens",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ninox boobook",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ninox novaeseelandiae",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ninox japonica",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ninox scutulata",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ninox theomacha",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Uroglaux dimorpha",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Otus magicus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Otus beccarii",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pandion haliaetus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Elanus caeruleus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Henicopernis longicauda",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Aviceda subcristata",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Macheiramphus alcinus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Harpyopsis novaeguineae",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Aquila gurneyi",
+    "scarcities" : [ "NEAR_THREATENED" ]
+  }, {
+    "scientificName" : "Aquila audax",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Hieraaetus weiskei",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Circus spilothorax",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Circus approximans",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Circus assimilis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Circus melanoleucos",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Accipiter soloensis",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Accipiter hiogaster",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Accipiter novaehollandiae",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Accipiter poliocephalus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Accipiter fasciatus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Accipiter melanochlamys",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Accipiter cirrocephalus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Accipiter meyerianus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Erythrotriorchis buergersi",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Megatriorchis doriae",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Haliaeetus leucogaster",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Haliastur sphenurus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Haliastur indus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Milvus migrans",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Butastur indicus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Rhyticeros plicatus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Merops philippinus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Merops ornatus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Eurystomus orientalis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ceyx solitarius",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ceyx pusillus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ceyx azureus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Alcedo atthis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Syma torotoro",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Syma megarhyncha",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Todiramphus nigrocyaneus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Todiramphus macleayii",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Todiramphus chloris",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Todiramphus saurophagus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Todiramphus sanctus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Tanysiptera galatea",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Tanysiptera ellioti",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Tanysiptera riedelii",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Tanysiptera carolinae",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Tanysiptera hydrocharis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Tanysiptera sylvia",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Tanysiptera nympha",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Tanysiptera danae",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Melidora macrorrhina",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Dacelo leachii",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Dacelo tyro",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Dacelo gaudichaud",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Clytoceyx rex",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Falco moluccensis",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Falco cenchroides",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Falco severus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Falco longipennis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Falco berigora",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Falco hypoleucos",
+    "scarcities" : [ "RARE_ACCIDENTAL", "VULNERABLE" ]
+  }, {
+    "scientificName" : "Falco peregrinus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Probosciger aterrimus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Cacatua pastinator",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Cacatua sanguinea",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Cacatua galerita",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Psittrichas fulgidus",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Psittacella brehmii",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Psittacella lorentzi",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Psittacella picta",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Psittacella modesta",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Psittacella madaraszi",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Oreopsittacus arfaki",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Charmosyna rubrigularis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Charmosyna multistriata",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Charmosyna wilhelminae",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Charmosyna rubronotata",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Charmosyna placentis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Charmosyna pulchella",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Charmosyna josefinae",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Charmosyna papou",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Charmosyna stellae",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Neopsittacus musschenbroekii",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Neopsittacus pullicauda",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Lorius lory",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Lorius hypoinochrous",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Chalcopsitta atra",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Chalcopsitta duivenbodei",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Chalcopsitta scintillata",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pseudeos fuscata",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Psitteuteles goldiei",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Eos squamata",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Eos cyanogenia",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Trichoglossus haematodus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Trichoglossus rosenbergii",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Trichoglossus moluccanus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Psittaculirostris desmarestii",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Psittaculirostris godmani",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Psittaculirostris cervicalis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Psittaculirostris edwardsii",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Psittaculirostris salvadorii",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Cyclopsitta gulielmitertii",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Cyclopsitta nigrifrons",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Cyclopsitta amabilis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Cyclopsitta melanogenia",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Cyclopsitta diophthalma",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Loriculus aurantiifrons",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Alisterus amboinensis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Alisterus chloropterus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Aprosmictus erythropterus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Eclectus roratus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Geoffroyus geoffroyi",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Geoffroyus simplex",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Micropsitta keiensis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Micropsitta geelvinkiana",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Micropsitta pusio",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Micropsitta bruijnii",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Erythropitta rufiventris",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Erythropitta macklotii",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Pitta novaeguineae",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Pitta rosenbergii",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pitta versicolor",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ailuroedus buccoides",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ailuroedus melanotis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Archboldia papuensis",
+    "scarcities" : [ "NEAR_THREATENED" ]
+  }, {
+    "scientificName" : "Amblyornis macgregoriae",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Amblyornis subalaris",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Amblyornis inornata",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Amblyornis flavifrons",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Sericulus ardens",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Sericulus aureus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Sericulus bakeri",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Chlamydera lauterbachi",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Chlamydera cerviniventris",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Cormobates placens",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Sipodotus wallacii",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Clytomyias insignis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Chenorhamphus grayi",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Malurus cyanocephalus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Malurus alboscapulatus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Lichmera argentauris",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Lichmera indistincta",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Lichmera alboauricularis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Entomyzon cyanotis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Melithreptus albogularis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Xanthotis polygrammus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Xanthotis flaviventer",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Philemon meyeri",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Philemon brassi",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Philemon citreogularis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Philemon buceroides",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Philemon argenticeps",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Philemon corniculatus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Myzomela albigula",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Myzomela cineracea",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Myzomela eques",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Myzomela rubrotincta",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Myzomela rubrobrunnea",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Myzomela obscura",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Myzomela cruentata",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Myzomela nigrita",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Myzomela erythrocephala",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Myzomela adolphinae",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Myzomela sclateri",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Myzomela pammelaena",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Myzomela rosenbergii",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Myzomela longirostris",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pycnopygius ixoides",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pycnopygius cinereus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pycnopygius stictocephalus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Glycichaera fallax",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ptiloprora plumbea",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ptiloprora meekiana",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ptiloprora erythropleura",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ptiloprora guisei",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ptiloprora mayri",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ptiloprora perstriata",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ramsayornis modestus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Conopophila albogularis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Melilestes megarhynchus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Timeliopsis griseigula",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Timeliopsis fulvigula",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Macgregoria pulchra",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Melipotes gymnops",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Melipotes fumigatus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Melipotes carolae",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Melipotes ater",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Oreornis chrysogenys",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Meliphaga aruensis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Meliphaga notata",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Microptilotis albonotatus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Microptilotis orientalis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Microptilotis analogus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Microptilotis montanus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Microptilotis mimikae",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Microptilotis cinereifrons",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Microptilotis gracilis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Microptilotis flavirictus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Gavicalis versicolor",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ptilotula flavescens",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Caligavis obscura",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Caligavis subfrenata",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Melidectes fuscus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Melidectes nouhuysi",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Melidectes princeps",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Melidectes ochromelas",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Melidectes leucostephes",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Melidectes belfordi",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Melidectes rufocrissalis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Melidectes foersteri",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Melidectes torquatus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pachycare flavogriseum",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Gerygone chrysogaster",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Gerygone palpebrosa",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Gerygone chloronota",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Gerygone olivacea",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Gerygone hypoxantha",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Gerygone magnirostris",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Gerygone ruficollis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Gerygone levigaster",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Gerygone fusca",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Crateroscelis murina",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Crateroscelis nigrorufa",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Crateroscelis robusta",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Sericornis spilodera",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Sericornis papuensis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Sericornis perspicillatus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Sericornis rufescens",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Sericornis arfakianus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Sericornis beccarii",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Sericornis nouhuysi",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Acanthiza cinerea",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Acanthiza murina",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Orthonyx temminckii",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Orthonyx novaeguineae",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Garritornis isidorei",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pomatostomus temporalis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Eulacestoma nigropectus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Daphoenositta papuensis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Daphoenositta miranda",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pitohui cerviniventris",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Pitohui kirhocephalus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Pitohui uropygialis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Pitohui dichrous",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Sphecotheres vieilloti",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Oriolus sagittatus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Oriolus szalayi",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Oriolus flavocinctus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Oreocharis arfaki",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Paramythia olivacea",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Paramythia montium",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Aleadryas rufinucha",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ornorectes cristatus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ptilorrhoa leucosticta",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ptilorrhoa castanonota",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ptilorrhoa caerulescens",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Ptilorrhoa geislerorum",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Cinclosoma ajax",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Melanorectes nigrescens",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pachycephala schlegelii",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pachycephala soror",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pachycephala meyeri",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pachycephala lorentzi",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pachycephala modesta",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pachycephala tenebrosa",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pachycephala teysmanni",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pachycephala fulvotincta",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Pachycephala phaionota",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Pachycephala hyperythra",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pachycephala griseiceps",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Pachycephala simplex",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Pachycephala monacha",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Pachycephala leucogastra",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Pachycephala rufiventris",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Pachycephala lanioides",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Pachycephala mentalis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Pachycephala pectoralis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Pachycephala melanura",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Pachycephala aurea",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pseudorectes ferrugineus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pseudorectes incertus",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Colluricincla tenebrosa",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Colluricincla megarhyncha",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Colluricincla harmonica",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Androphobus viridis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Coracina caeruleogrisea",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Coracina longicauda",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Coracina lineata",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Coracina boyeri",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Coracina novaehollandiae",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Coracina papuensis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Campochaera sloetii",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Edolisoma montanum",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Edolisoma schisticeps",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Edolisoma morio",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Edolisoma incertum",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Edolisoma tenuirostre",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Edolisoma meyerii",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Edolisoma melas",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Lalage sueurii",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Lalage tricolor",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Lalage atrovirens",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Lalage leucoptera",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Lalage leucomela",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Rhagologus leucostigma",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Peltops blainvillii",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Peltops montanus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Melloria quoyi",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Gymnorhina tibicen",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Cracticus cassicus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Cracticus mentalis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Artamus cinereus",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Artamus maximus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Artamus leucoryn",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Machaerirhynchus flaviventer",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Machaerirhynchus nigripectus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Chaetorhynchus papuensis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Rhipidura atra",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Rhipidura kordensis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Rhipidura isura",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Rhipidura threnothorax",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Rhipidura maculipectus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Rhipidura leucothorax",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Rhipidura leucophrys",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Rhipidura brachyrhyncha",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Rhipidura rufidorsa",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Rhipidura rufifrons",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Rhipidura dryas",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Rhipidura albolimbata",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Rhipidura hyperythra",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Rhipidura phasiana",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Rhipidura albiscapa",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Dicrurus hottentottus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Dicrurus bracteatus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Ifrita kowaldi",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Myiagra atra",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Myiagra rubecula",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Myiagra ruficollis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Myiagra cyanoleuca",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Myiagra alecto",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Myiagra nana",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Myiagra inquieta",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Arses insularis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Arses telescopthalmus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Grallina cyanoleuca",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Grallina bruijnii",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Symposiachrus axillaris",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Symposiachrus rubiensis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Symposiachrus guttula",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Symposiachrus trivirgatus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Symposiachrus julianae",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Symposiachrus brehmii",
+    "scarcities" : [ "ENDANGERED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Symposiachrus manadensis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Carterornis chrysomela",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Monarcha cinerascens",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Monarcha frater",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Monarcha melanopsis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Lanius cristatus",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Lanius schach",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Corvus fuscicapillus",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Corvus tristis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Corvus orru",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Melampitta lugubris",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Megalampitta gigantea",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Phonygammus keraudrenii",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Manucodia ater",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Manucodia jobiensis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Manucodia chalybatus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Manucodia comrii",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pteridophora alberti",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Parotia carolae",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Parotia sefilata",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Parotia wahnesi",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Parotia lawesii",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Parotia berlepschi",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Seleucidis melanoleucus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Drepanornis albertisi",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Drepanornis bruijnii",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Lophorina superba",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Lophorina magnifica",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Lophorina intercedens",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Epimachus fastosus",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Epimachus meyeri",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Paradigalla carunculata",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Paradigalla brevicauda",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Astrapia nigra",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Astrapia splendidissima",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Astrapia rothschildi",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Astrapia stephaniae",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Astrapia mayeri",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Cicinnurus regius",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Cicinnurus magnificus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Cicinnurus respublica",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Paradisornis rudolphi",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Paradisaea guilielmi",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Paradisaea rubra",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Paradisaea minor",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Paradisaea apoda",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Paradisaea raggiana",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Melanocharis arfakiana",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Melanocharis nigra",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Melanocharis longicauda",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Melanocharis versteri",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Melanocharis striativentris",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Rhamphocharis crassirostris",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Rhamphocharis piperata",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Oedistoma iliolophus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Oedistoma pygmaeum",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Toxorhamphus novaeguineae",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Toxorhamphus poliopterus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Cnemophilus loriae",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Cnemophilus sanguineus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Cnemophilus macgregorii",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Loboparadisea sericea",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Amalocichla sclateriana",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Amalocichla incerta",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pachycephalopsis hattamensis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Pachycephalopsis poliosoma",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Eugerygone rubra",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Petroica bivittata",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Petroica archboldi",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Kempiella griseoceps",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Kempiella flavovirescens",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Devioeca papuana",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Monachella muelleriana",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Microeca flavigaster",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Microeca fascinans",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Drymodes beccarii",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Plesiodryas albonotata",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Poecilodryas brachyura",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Poecilodryas hypoleuca",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Heteromyias albispecularis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Heteromyias armiti",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Heteromyias cinereifrons",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Gennaeodryas placens",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Tregellasia leucops",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Peneothello sigillata",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Peneothello cryptoleuca",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Peneothello cyanus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Peneothello bimaculata",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Peneoenanthe pulverulenta",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Mirafra javanica",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Cisticola juncidis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Cisticola exilis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Acrocephalus orientalis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Acrocephalus stentoreus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Acrocephalus australis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Locustella fasciolata",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Locustella amnicola",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Cincloramphus timoriensis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Cincloramphus macrurus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Poodytes gramineus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Poodytes albolimbatus",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Petrochelidon ariel",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Petrochelidon nigricans",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Cecropis daurica",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Hirundo javanica",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Hirundo neoxena",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Hirundo rustica",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Riparia riparia",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Pycnonotus aurigaster",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Phylloscopus montis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Phylloscopus borealis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Phylloscopus examinandus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Phylloscopus xanthodryas",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Phylloscopus trivirgatus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Phylloscopus poliocephalus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Phylloscopus misoriensis",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Phylloscopus maforensis",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Zosterops atricapilla",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Zosterops chloris",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Zosterops citrinella",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Zosterops atrifrons",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Zosterops chrysolaemus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Zosterops minor",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Zosterops mysorensis",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Zosterops fuscicapilla",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Zosterops crookshanki",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Zosterops novaeguineae",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Zosterops griseotinctus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Sturnus vulgaris",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Acridotheres fuscus",
+    "scarcities" : [ "INTRODUCED" ]
+  }, {
+    "scientificName" : "Mino dumontii",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Mino kreffti",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Mino anais",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Aplonis metallica",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Aplonis mystacea",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Aplonis cantoroides",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Aplonis magna",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Aplonis mysolensis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Zoothera heinei",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Turdus poliocephalus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Muscicapa griseisticta",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Calliope calliope",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Monticola solitarius",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Saxicola caprata",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Saxicola torquatus",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Dicaeum pectorale",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Dicaeum ignicolle",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Dicaeum geelvinkianum",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Leptocoma aspasia",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Cinnyris jugularis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Cinnyris idenburgi",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Lonchura molucca",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Lonchura tristissima",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Lonchura leucosticta",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Lonchura atricapilla",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Lonchura grandis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Lonchura vana",
+    "scarcities" : [ "VULNERABLE", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Lonchura caniceps",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Lonchura nevermanni",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Lonchura spectabilis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Lonchura castaneothorax",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Lonchura stygia",
+    "scarcities" : [ "NEAR_THREATENED", "ENDEMIC" ]
+  }, {
+    "scientificName" : "Lonchura teerinki",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Lonchura monticola",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Lonchura montana",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Oreostruthus fuliginosus",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Neochmia temporalis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Neochmia evangelinae",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Erythrura trichroa",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Erythrura papuana",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Passer domesticus",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Passer montanus",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Anthus gustavi",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Anthus rufulus",
+    "scarcities" : [ "RARE_ACCIDENTAL" ]
+  }, {
+    "scientificName" : "Anthus novaeseelandiae",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Anthus gutturalis",
+    "scarcities" : [ "ENDEMIC" ]
+  }, {
+    "scientificName" : "Motacilla flava",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Motacilla cinerea",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  }, {
+    "scientificName" : "Motacilla tschutschensis",
+    "scarcities" : [ "COMMON_OR_BREEDING" ]
+  } ]
+}

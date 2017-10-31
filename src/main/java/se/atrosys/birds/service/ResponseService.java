@@ -1,6 +1,7 @@
 package se.atrosys.birds.service;
 
 import org.springframework.stereotype.Component;
+import se.atrosys.birds.exception.BirdFlickrException;
 import se.atrosys.birds.flickr.FlickrService;
 import se.atrosys.birds.model.Bird;
 import se.atrosys.birds.model.BirdPhoto;
@@ -29,7 +30,7 @@ public class ResponseService {
 		this.xenoCantoService = xenoCantoService;
 	}
 
-	public Response createResponse(String language) throws JAXBException {
+	public Response createResponse(String language) throws BirdFlickrException {
 		Bird bird = null;
 		List<BirdPhoto> pictures = Collections.emptyList();
 

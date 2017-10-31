@@ -3,3 +3,19 @@ spring:
     hibernate:
       ddl-auto: create-drop
     database: h2
+
+---
+spring:
+  profiles: postgresql
+
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    name: birds
+    username: birds
+    password: birds
+    url: jdbc:postgresql://localhost/birds
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database: postgresql
