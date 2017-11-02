@@ -3,15 +3,17 @@ package se.atrosys.birds.service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-import se.atrosys.birds.avibase.AviBaseRegionService;
-import se.atrosys.birds.avibase.AviBaseResult;
-import se.atrosys.birds.avibase.AviBaseService;
+import se.atrosys.birds.taxonomy.avibase.AviBaseRegionService;
+import se.atrosys.birds.taxonomy.avibase.AviBaseResult;
+import se.atrosys.birds.taxonomy.avibase.AviBaseService;
 import se.atrosys.birds.model.Order;
 import se.atrosys.birds.model.Region;
 import se.atrosys.birds.repository.RegionRepository;
-import se.atrosys.birds.xml.model.IocList;
-import se.atrosys.birds.xml.service.BirdsFromXmlService;
-import se.atrosys.birds.xml.service.IocListConverter;
+import se.atrosys.birds.taxonomy.ebird.EbirdService;
+import se.atrosys.birds.taxonomy.ioc.IocTranslationService;
+import se.atrosys.birds.taxonomy.xml.model.IocList;
+import se.atrosys.birds.taxonomy.xml.service.BirdsFromXmlService;
+import se.atrosys.birds.taxonomy.xml.service.IocListConverter;
 
 import java.io.IOException;
 import java.util.List;
@@ -28,13 +30,17 @@ public class PopulateService {
 	private final BirdPopulator birdPopulator;
 	private final AviBaseService aviBaseService;
 	private final RegionScarcityService regionScarcityService;
+	private final EbirdService ebirdService;
+	private final IocTranslationService iocTranslationService;
 
 	public PopulateService(BirdsFromXmlService xmlService,
 	                       AviBaseRegionService aviBaseRegionService,
 	                       RegionRepository regionRepository,
 	                       BirdPopulator birdPopulator,
 	                       AviBaseService aviBaseService,
-	                       RegionScarcityService regionScarcityService) {
+	                       RegionScarcityService regionScarcityService,
+	                       EbirdService ebirdService,
+	                       IocTranslationService iocTranslationService) {
 
 		this.xmlService = xmlService;
 		this.aviBaseRegionService = aviBaseRegionService;
@@ -42,6 +48,8 @@ public class PopulateService {
 		this.birdPopulator = birdPopulator;
 		this.aviBaseService = aviBaseService;
 		this.regionScarcityService = regionScarcityService;
+		this.ebirdService = ebirdService;
+		this.iocTranslationService = iocTranslationService;
 	}
 
 	public void populate() {
@@ -72,13 +80,12 @@ public class PopulateService {
 		iocList = xmlService.readCsv(iocList);
 
 		List<Order> orders = new IocListConverter(xmlService.languages(iocList)).convertIocList(iocList);
+		orders = ebirdService.addEbirdInformation(orders, iocTranslationService.read());
 
-//		birdPopulator.saveOrder(orders.get(0));
 		if (i == -1) {
 			orders.forEach(birdPopulator::saveOrder);
 		} else {
 			orders.subList(0, i).forEach(birdPopulator::saveOrder);
 		}
-//		regionRepository.findAll().forEach(this::setBirdRegions);
 	}
 }

@@ -22,7 +22,7 @@ import java.util.Collections;
 @RunWith(SpringRunner.class)
 @DataJpaTest
 @EnableCaching
-@ComponentScan({"se.atrosys.birds.service", "se.atrosys.birds.xml", "se.atrosys.birds.avibase", "se.atrosys.birds.flickr", "se.atrosys.birds.xenocanto" })
+@ComponentScan({"se.atrosys.birds.service", "se.atrosys.birds.taxonomy.xml", "se.atrosys.birds.taxonomy.avibase", "se.atrosys.birds.flickr", "se.atrosys.birds.media.xenocanto"})
 public class BirdServiceTest {
 	@Autowired
 	private BirdService birdService;

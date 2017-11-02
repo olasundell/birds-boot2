@@ -12,8 +12,13 @@ import se.atrosys.birds.repository.FamilyRepository;
 import se.atrosys.birds.repository.GenusRepository;
 import se.atrosys.birds.repository.LanguageRepository;
 import se.atrosys.birds.repository.OrderRepository;
+import se.atrosys.birds.taxonomy.ebird.EbirdService;
+import se.atrosys.birds.taxonomy.ebird.EbirdSpecies;
 
+import java.util.Map;
 import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 /**
  * TODO write documentation
@@ -25,17 +30,21 @@ public class BirdPopulator {
 	private final FamilyRepository familyRepository;
 	private final GenusRepository genusRepository;
 	private final OrderRepository orderRepository;
+	private final EbirdService ebirdService;
 
 	@Autowired
 	public BirdPopulator(BirdService birdService,
 	                     FamilyRepository familyRepository,
 	                     GenusRepository genusRepository,
 	                     OrderRepository orderRepository,
-	                     LanguageRepository languageRepository) {
+	                     LanguageRepository languageRepository, EbirdService ebirdService) {
 		this.birdService = birdService;
 		this.familyRepository = familyRepository;
 		this.genusRepository = genusRepository;
 		this.orderRepository = orderRepository;
+		this.ebirdService = ebirdService;
+
+
 	}
 
 	public void saveOrder(Order o) {

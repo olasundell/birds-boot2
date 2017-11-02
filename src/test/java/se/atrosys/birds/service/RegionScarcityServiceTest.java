@@ -6,26 +6,19 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cache.concurrent.ConcurrentMapCache;
-import org.springframework.cache.concurrent.ConcurrentMapCacheFactoryBean;
-import org.springframework.cache.concurrent.ConcurrentMapCacheManager;
 import org.springframework.cache.support.SimpleCacheManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
-import se.atrosys.birds.avibase.AviBaseResult;
+import se.atrosys.birds.taxonomy.avibase.AviBaseResult;
 import se.atrosys.birds.model.Region;
 import se.atrosys.birds.model.RegionalScarcity;
 import se.atrosys.birds.repository.BirdRepository;
 import se.atrosys.birds.repository.RegionRepository;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
@@ -36,7 +29,7 @@ import java.util.Map;
 @RunWith(SpringRunner.class)
 @DataJpaTest
 @EnableCaching
-@ComponentScan({"se.atrosys.birds.service", "se.atrosys.birds.xml", "se.atrosys.birds.avibase", "se.atrosys.birds.flickr", "se.atrosys.birds.xenocanto" })
+@ComponentScan({"se.atrosys.birds.service", "se.atrosys.birds.taxonomy.xml", "se.atrosys.birds.taxonomy.avibase", "se.atrosys.birds.flickr", "se.atrosys.birds.media.xenocanto"})
 public class RegionScarcityServiceTest {
 	@Autowired
 	private BirdRepository birdRepository;

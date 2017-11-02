@@ -1,0 +1,1593 @@
+{
+   "url" : "catalog?taxonCode=eurbul&mediaType=a&q=Eurasian%20Bullfinch%20-%20Pyrrhula%20pyrrhula",
+   "results" : {
+      "nextCursorMark" : "AoJwyOyYiNECfdS1UA==",
+      "content" : [
+         {
+            "stimulus" : false,
+            "sciName" : "Pyrrhula pyrrhula [pyrrhula Group]",
+            "recorder" : [
+               "Roland R26"
+            ],
+            "mediaType" : "Audio",
+            "comments" : null,
+            "valid" : "true",
+            "ratingCount" : "1",
+            "userId" : "USER420253",
+            "speciesCode" : "eurbul2",
+            "eBirdChecklistUrl" : "https://ebird.org/ebird/view/checklist/S40141685",
+            "catalogId" : "73181211",
+            "thumbnailUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/73181211/poster",
+            "previewUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/73181211/poster",
+            "age" : null,
+            "licenseType" : "anylabuse_v1",
+            "obsComments" : null,
+            "userProfileUrl" : "https://ebird.org/ebird/profile/NDIwMjUz",
+            "rating" : "2.0",
+            "commonName" : "Eurasian Bullfinch (Eurasian)",
+            "accessories" : null,
+            "homeArchive" : null,
+            "subjectData" : [
+               {
+                  "ageSexCounts" : [],
+                  "sciName" : "Pyrrhula pyrrhula [pyrrhula Group]",
+                  "comName" : "Eurasian Bullfinch (Eurasian)",
+                  "speciesCode" : "eurbul2",
+                  "subjectTags" : {}
+               }
+            ],
+            "locationLine2" : "Derbyshire, England, United Kingdom",
+            "userDisplayName" : "Nárgila Moura",
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/73181211/spectrogram_small",
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/73181211/audio",
+            "microphone" : [
+               "Sennheiser K6/ME66"
+            ],
+            "eBirdChecklistId" : "S40141685",
+            "assetId" : "73181211",
+            "collected" : false,
+            "behaviors" : null,
+            "specimenIds" : null,
+            "locationLine1" : "Eaves Knoll Road summit",
+            "obsDttm" : "27 Oct 2017",
+            "specimenUrl" : "https://macaulaylibrary.org/asset/73181211",
+            "sex" : null,
+            "location" : "Eaves Knoll Road summit, Derbyshire, England, United Kingdom",
+            "source" : "ebird"
+         },
+         {
+            "source" : "ebird",
+            "specimenUrl" : "https://macaulaylibrary.org/asset/68671211",
+            "sex" : "Female",
+            "location" : "Werdauer Forst, Sachsen, Germany",
+            "specimenIds" : null,
+            "behaviors" : "Song",
+            "obsDttm" : "16 Mar 2016",
+            "locationLine1" : "Werdauer Forst",
+            "collected" : false,
+            "assetId" : "68671211",
+            "eBirdChecklistId" : "S39139421",
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/68671211/audio",
+            "microphone" : null,
+            "userDisplayName" : "Patrick Franke",
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/68671211/spectrogram_small",
+            "subjectData" : [
+               {
+                  "subjectTags" : {
+                     "sounds" : [
+                        {
+                           "key" : "song",
+                           "localizedString" : "Song"
+                        }
+                     ]
+                  },
+                  "speciesCode" : "eurbul",
+                  "sciName" : "Pyrrhula pyrrhula",
+                  "comName" : "Eurasian Bullfinch",
+                  "ageSexCounts" : [
+                     {
+                        "localizedString" : "Adult Female",
+                        "count" : -1,
+                        "age" : "adult",
+                        "localizedSexString" : "Female",
+                        "localizedAgeString" : "Adult",
+                        "sex" : "female"
+                     }
+                  ]
+               }
+            ],
+            "locationLine2" : "Sachsen, Germany",
+            "commonName" : "Eurasian Bullfinch",
+            "homeArchive" : null,
+            "accessories" : null,
+            "licenseType" : "anylabuse_v1",
+            "obsComments" : null,
+            "rating" : "3.0",
+            "userProfileUrl" : null,
+            "age" : "Adult",
+            "thumbnailUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/68671211/poster",
+            "catalogId" : "68671211",
+            "previewUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/68671211/poster",
+            "speciesCode" : "eurbul",
+            "eBirdChecklistUrl" : "https://ebird.org/ebird/view/checklist/S39139421",
+            "ratingCount" : "1",
+            "valid" : "true",
+            "userId" : "USER926482",
+            "comments" : null,
+            "mediaType" : "Audio",
+            "recorder" : null,
+            "sciName" : "Pyrrhula pyrrhula",
+            "stimulus" : false
+         },
+         {
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/68671131/spectrogram_small",
+            "userDisplayName" : "Patrick Franke",
+            "microphone" : null,
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/68671131/audio",
+            "commonName" : "Eurasian Bullfinch",
+            "accessories" : null,
+            "homeArchive" : null,
+            "locationLine2" : "Mecklenburg-Vorpommern, Germany",
+            "subjectData" : [
+               {
+                  "subjectTags" : {
+                     "sounds" : [
+                        {
+                           "localizedString" : "Call",
+                           "key" : "call"
+                        }
+                     ]
+                  },
+                  "speciesCode" : "eurbul",
+                  "comName" : "Eurasian Bullfinch",
+                  "sciName" : "Pyrrhula pyrrhula",
+                  "ageSexCounts" : [
+                     {
+                        "localizedAgeString" : "Unknown",
+                        "sex" : "male",
+                        "count" : -1,
+                        "age" : "unknown",
+                        "localizedString" : "Male",
+                        "localizedSexString" : "Male"
+                     }
+                  ]
+               }
+            ],
+            "sex" : "Male",
+            "specimenUrl" : "https://macaulaylibrary.org/asset/68671131",
+            "location" : "Gollwitz, Mecklenburg-Vorpommern, Germany",
+            "source" : "ebird",
+            "eBirdChecklistId" : "S39139408",
+            "collected" : false,
+            "assetId" : "68671131",
+            "locationLine1" : "Gollwitz",
+            "obsDttm" : "27 Dec 2014",
+            "behaviors" : "Call",
+            "specimenIds" : null,
+            "userId" : "USER926482",
+            "valid" : "true",
+            "ratingCount" : "1",
+            "eBirdChecklistUrl" : "https://ebird.org/ebird/view/checklist/S39139408",
+            "speciesCode" : "eurbul",
+            "stimulus" : false,
+            "sciName" : "Pyrrhula pyrrhula",
+            "recorder" : null,
+            "mediaType" : "Audio",
+            "comments" : null,
+            "userProfileUrl" : null,
+            "rating" : "3.0",
+            "obsComments" : null,
+            "licenseType" : "anylabuse_v1",
+            "previewUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/68671131/poster",
+            "catalogId" : "68671131",
+            "thumbnailUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/68671131/poster",
+            "age" : "Unknown"
+         },
+         {
+            "ratingCount" : "1",
+            "valid" : "true",
+            "userId" : "USER926482",
+            "speciesCode" : "eurbul",
+            "eBirdChecklistUrl" : "https://ebird.org/ebird/view/checklist/S39139300",
+            "sciName" : "Pyrrhula pyrrhula",
+            "stimulus" : false,
+            "comments" : "ssp pyrrhula, regularly wintering in Central Europe",
+            "recorder" : null,
+            "mediaType" : "Audio",
+            "licenseType" : "anylabuse_v1",
+            "obsComments" : null,
+            "rating" : "3.0",
+            "userProfileUrl" : null,
+            "thumbnailUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/68670651/poster",
+            "catalogId" : "68670651",
+            "previewUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/68670651/poster",
+            "age" : null,
+            "userDisplayName" : "Patrick Franke",
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/68670651/spectrogram_small",
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/68670651/audio",
+            "microphone" : null,
+            "accessories" : null,
+            "commonName" : "Eurasian Bullfinch",
+            "homeArchive" : null,
+            "subjectData" : [
+               {
+                  "subjectTags" : {
+                     "sounds" : [
+                        {
+                           "key" : "call",
+                           "localizedString" : "Call"
+                        }
+                     ]
+                  },
+                  "speciesCode" : "eurbul",
+                  "ageSexCounts" : [],
+                  "comName" : "Eurasian Bullfinch",
+                  "sciName" : "Pyrrhula pyrrhula"
+               }
+            ],
+            "locationLine2" : "Aqmola oblysy, Kazakhstan",
+            "sex" : null,
+            "specimenUrl" : "https://macaulaylibrary.org/asset/68670651",
+            "location" : "Dzhukey, Aqmola oblysy, Kazakhstan",
+            "source" : "ebird",
+            "collected" : false,
+            "assetId" : "68670651",
+            "eBirdChecklistId" : "S39139300",
+            "specimenIds" : null,
+            "behaviors" : "Call",
+            "obsDttm" : "7 May 2011",
+            "locationLine1" : "Dzhukey"
+         },
+         {
+            "userDisplayName" : "Niels Kaare Krabbe",
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/230229/spectrogram_small",
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/230229/audio",
+            "microphone" : [
+               "Sennheiser ME 67"
+            ],
+            "commonName" : "Eurasian Bullfinch (Eurasian)",
+            "accessories" : null,
+            "homeArchive" : null,
+            "subjectData" : [
+               {
+                  "comName" : "Eurasian Bullfinch (Eurasian)",
+                  "sciName" : "Pyrrhula pyrrhula [pyrrhula Group]",
+                  "ageSexCounts" : [
+                     {
+                        "sex" : "male",
+                        "localizedAgeString" : "Adult",
+                        "localizedSexString" : "Male",
+                        "count" : 1,
+                        "age" : "adult",
+                        "localizedString" : "Adult Male – 1"
+                     }
+                  ],
+                  "speciesCode" : "eurbul2",
+                  "subjectTags" : {
+                     "sounds" : [
+                        {
+                           "localizedString" : "Call",
+                           "key" : "call"
+                        }
+                     ],
+                     "other" : [
+                        {
+                           "key" : "collected",
+                           "localizedString" : "collected"
+                        }
+                     ]
+                  }
+               }
+            ],
+            "locationLine2" : "Region Hovedstaden, Denmark",
+            "location" : "Fairyhill, Gurreholmvej 6, Region Hovedstaden, Denmark",
+            "specimenUrl" : "https://macaulaylibrary.org/asset/230229",
+            "sex" : "Male",
+            "source" : "ml",
+            "eBirdChecklistId" : null,
+            "collected" : true,
+            "assetId" : "230229",
+            "behaviors" : "Call, collected",
+            "specimenIds" : [
+               "ZMUC 100016",
+               "tissue ZMUC 135731"
+            ],
+            "locationLine1" : "Fairyhill, Gurreholmvej 6",
+            "obsDttm" : "20 Jan 2005",
+            "valid" : "true",
+            "ratingCount" : "0",
+            "userId" : "USER665391",
+            "speciesCode" : "eurbul2",
+            "eBirdChecklistUrl" : null,
+            "stimulus" : false,
+            "sciName" : "Pyrrhula pyrrhula [pyrrhula Group]",
+            "mediaType" : "Audio",
+            "recorder" : [
+               "SONY TCM-5000"
+            ],
+            "comments" : "Eastern male with distinctive call, but same subspecies (presumably from western Russia) occurring invasively in nw Europe that winter. Collected.",
+            "licenseType" : "other",
+            "obsComments" : null,
+            "userProfileUrl" : null,
+            "rating" : "0.0",
+            "catalogId" : "230229",
+            "thumbnailUrl" : "https://macaulaylibrary.org/media/Spectrograms/audio/poster/220/0/230/230229.jpg",
+            "previewUrl" : "https://macaulaylibrary.org/media/Spectrograms/audio/image/320/0/230/230229.jpg",
+            "age" : "Adult"
+         },
+         {
+            "previewUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65888081/poster",
+            "thumbnailUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65888081/poster",
+            "catalogId" : "65888081",
+            "age" : null,
+            "rating" : "0.0",
+            "userProfileUrl" : "https://ebird.org/ebird/profile/MTU0OTA3",
+            "obsComments" : null,
+            "licenseType" : "anylabuse_v1",
+            "sciName" : "Pyrrhula pyrrhula",
+            "stimulus" : false,
+            "comments" : "Feeding group",
+            "mediaType" : "Audio",
+            "recorder" : [
+               "Olympus LS3"
+            ],
+            "userId" : "USER154907",
+            "ratingCount" : "0",
+            "valid" : "true",
+            "eBirdChecklistUrl" : "https://ebird.org/ebird/view/checklist/S38611702",
+            "speciesCode" : "eurbul",
+            "assetId" : "65888081",
+            "collected" : false,
+            "eBirdChecklistId" : "S38611702",
+            "obsDttm" : "12 Jul 2017",
+            "locationLine1" : "Barlow Fishing Lakes",
+            "specimenIds" : null,
+            "behaviors" : "Call",
+            "location" : "Barlow Fishing Lakes, Derbyshire, England, United Kingdom",
+            "specimenUrl" : "https://macaulaylibrary.org/asset/65888081",
+            "sex" : null,
+            "source" : "ebird",
+            "homeArchive" : null,
+            "commonName" : "Eurasian Bullfinch",
+            "accessories" : null,
+            "locationLine2" : "Derbyshire, England, United Kingdom",
+            "subjectData" : [
+               {
+                  "ageSexCounts" : [],
+                  "sciName" : "Pyrrhula pyrrhula",
+                  "comName" : "Eurasian Bullfinch",
+                  "speciesCode" : "eurbul",
+                  "subjectTags" : {
+                     "sounds" : [
+                        {
+                           "key" : "call",
+                           "localizedString" : "Call"
+                        }
+                     ]
+                  }
+               }
+            ],
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65888081/spectrogram_small",
+            "userDisplayName" : "Nicholas Allen",
+            "microphone" : [
+               "Sennheiser ME66"
+            ],
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65888081/audio"
+         },
+         {
+            "userDisplayName" : "Nicholas Allen",
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65888071/spectrogram_small",
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65888071/audio",
+            "microphone" : [
+               "Sennheiser ME66"
+            ],
+            "commonName" : "Eurasian Bullfinch",
+            "homeArchive" : null,
+            "accessories" : null,
+            "subjectData" : [
+               {
+                  "ageSexCounts" : [
+                     {
+                        "localizedAgeString" : "Adult",
+                        "sex" : "male",
+                        "count" : -1,
+                        "age" : "adult",
+                        "localizedString" : "Adult Male",
+                        "localizedSexString" : "Male"
+                     }
+                  ],
+                  "comName" : "Eurasian Bullfinch",
+                  "sciName" : "Pyrrhula pyrrhula",
+                  "speciesCode" : "eurbul",
+                  "subjectTags" : {
+                     "sounds" : [
+                        {
+                           "key" : "call",
+                           "localizedString" : "Call"
+                        }
+                     ]
+                  }
+               }
+            ],
+            "locationLine2" : "Derbyshire, England, United Kingdom",
+            "location" : "Barlow Fishing Lakes, Derbyshire, England, United Kingdom",
+            "specimenUrl" : "https://macaulaylibrary.org/asset/65888071",
+            "sex" : "Male",
+            "source" : "ebird",
+            "collected" : false,
+            "assetId" : "65888071",
+            "eBirdChecklistId" : "S38611702",
+            "specimenIds" : null,
+            "behaviors" : "Call",
+            "obsDttm" : "12 Jul 2017",
+            "locationLine1" : "Barlow Fishing Lakes",
+            "ratingCount" : "0",
+            "valid" : "true",
+            "userId" : "USER154907",
+            "speciesCode" : "eurbul",
+            "eBirdChecklistUrl" : "https://ebird.org/ebird/view/checklist/S38611702",
+            "sciName" : "Pyrrhula pyrrhula",
+            "stimulus" : false,
+            "comments" : null,
+            "recorder" : [
+               "Olympus LS3"
+            ],
+            "mediaType" : "Audio",
+            "obsComments" : null,
+            "licenseType" : "anylabuse_v1",
+            "rating" : "0.0",
+            "userProfileUrl" : "https://ebird.org/ebird/profile/MTU0OTA3",
+            "thumbnailUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65888071/poster",
+            "catalogId" : "65888071",
+            "previewUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65888071/poster",
+            "age" : "Adult"
+         },
+         {
+            "source" : "ebird",
+            "specimenUrl" : "https://macaulaylibrary.org/asset/65833751",
+            "location" : "Chesterfield Canal at Bluebank, Derbyshire, England, United Kingdom",
+            "sex" : null,
+            "specimenIds" : null,
+            "behaviors" : "Call",
+            "obsDttm" : "10 Jul 2017",
+            "locationLine1" : "Chesterfield Canal at Bluebank",
+            "collected" : false,
+            "assetId" : "65833751",
+            "eBirdChecklistId" : "S38599829",
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65833751/audio",
+            "microphone" : [
+               "Sennheiser ME66"
+            ],
+            "userDisplayName" : "Nicholas Allen",
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65833751/spectrogram_small",
+            "subjectData" : [
+               {
+                  "subjectTags" : {
+                     "sounds" : [
+                        {
+                           "key" : "call",
+                           "localizedString" : "Call"
+                        }
+                     ]
+                  },
+                  "speciesCode" : "eurbul",
+                  "ageSexCounts" : [],
+                  "sciName" : "Pyrrhula pyrrhula",
+                  "comName" : "Eurasian Bullfinch"
+               }
+            ],
+            "locationLine2" : "Derbyshire, England, United Kingdom",
+            "commonName" : "Eurasian Bullfinch",
+            "homeArchive" : null,
+            "accessories" : null,
+            "obsComments" : null,
+            "licenseType" : "anylabuse_v1",
+            "rating" : "0.0",
+            "userProfileUrl" : "https://ebird.org/ebird/profile/MTU0OTA3",
+            "age" : null,
+            "thumbnailUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65833751/poster",
+            "catalogId" : "65833751",
+            "previewUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65833751/poster",
+            "speciesCode" : "eurbul",
+            "eBirdChecklistUrl" : "https://ebird.org/ebird/view/checklist/S38599829",
+            "ratingCount" : "0",
+            "valid" : "true",
+            "userId" : "USER154907",
+            "comments" : "High pass filtered to lessen road/factory noise",
+            "recorder" : [
+               "Olympus LS3"
+            ],
+            "mediaType" : "Audio",
+            "sciName" : "Pyrrhula pyrrhula",
+            "stimulus" : false
+         },
+         {
+            "eBirdChecklistUrl" : "https://ebird.org/ebird/view/checklist/S38576245",
+            "speciesCode" : "eurbul",
+            "userId" : "USER323507",
+            "ratingCount" : "1",
+            "valid" : "true",
+            "comments" : null,
+            "recorder" : [
+               "ls100"
+            ],
+            "mediaType" : "Audio",
+            "sciName" : "Pyrrhula pyrrhula",
+            "stimulus" : false,
+            "rating" : "3.0",
+            "userProfileUrl" : "https://ebird.org/ebird/profile/MzIzNTA3",
+            "obsComments" : "Mostly HO across 2 territories. 1 x AHYM seen flying over east field",
+            "licenseType" : "anylabuse_v1",
+            "age" : "Unknown",
+            "previewUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65716461/poster",
+            "thumbnailUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65716461/poster",
+            "catalogId" : "65716461",
+            "microphone" : [
+               "ls100 omni"
+            ],
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65716461/audio",
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65716461/spectrogram_small",
+            "userDisplayName" : "Dominic  Garcia-Hall",
+            "locationLine2" : "Staffordshire, England, United Kingdom",
+            "subjectData" : [
+               {
+                  "speciesCode" : "eurbul",
+                  "subjectTags" : {
+                     "sounds" : [
+                        {
+                           "key" : "call",
+                           "localizedString" : "Call"
+                        },
+                        {
+                           "key" : "flight_call",
+                           "localizedString" : "Flight Call"
+                        }
+                     ]
+                  },
+                  "ageSexCounts" : [
+                     {
+                        "localizedSexString" : "Unknown",
+                        "age" : "unknown",
+                        "count" : -1,
+                        "localizedString" : "Unknown",
+                        "sex" : "unknown",
+                        "localizedAgeString" : "Unknown"
+                     }
+                  ],
+                  "sciName" : "Pyrrhula pyrrhula",
+                  "comName" : "Eurasian Bullfinch"
+               }
+            ],
+            "homeArchive" : null,
+            "commonName" : "Eurasian Bullfinch",
+            "accessories" : null,
+            "source" : "ebird",
+            "sex" : "Unknown",
+            "specimenUrl" : "https://macaulaylibrary.org/asset/65716461",
+            "location" : "Peak District NP--Underhill Farm, Elkstone, Staffordshire, England, United Kingdom",
+            "obsDttm" : "10 Aug 2017",
+            "locationLine1" : "Peak District NP--Underhill Farm, Elkstone",
+            "specimenIds" : null,
+            "behaviors" : "Call, Flight Call",
+            "collected" : false,
+            "assetId" : "65716461",
+            "eBirdChecklistId" : "S38576245"
+         },
+         {
+            "microphone" : [
+               "Sennheiser ME66"
+            ],
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65550271/audio",
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65550271/spectrogram_small",
+            "userDisplayName" : "Nicholas Allen",
+            "locationLine2" : "Argyll and Bute, Scotland, United Kingdom",
+            "subjectData" : [
+               {
+                  "ageSexCounts" : [],
+                  "comName" : "Eurasian Bullfinch",
+                  "sciName" : "Pyrrhula pyrrhula",
+                  "speciesCode" : "eurbul",
+                  "subjectTags" : {
+                     "sounds" : [
+                        {
+                           "localizedString" : "Call",
+                           "key" : "call"
+                        }
+                     ]
+                  }
+               }
+            ],
+            "commonName" : "Eurasian Bullfinch",
+            "accessories" : null,
+            "homeArchive" : null,
+            "source" : "ebird",
+            "specimenUrl" : "https://macaulaylibrary.org/asset/65550271",
+            "location" : "Aros to southern end Salen Bay along A848, Argyll and Bute, Scotland, United Kingdom",
+            "sex" : null,
+            "obsDttm" : "4 Jul 2017",
+            "locationLine1" : "Aros to southern end Salen Bay along A848",
+            "specimenIds" : null,
+            "behaviors" : "Call",
+            "collected" : false,
+            "assetId" : "65550271",
+            "eBirdChecklistId" : "S38547905",
+            "eBirdChecklistUrl" : "https://ebird.org/ebird/view/checklist/S38547905",
+            "speciesCode" : "eurbul",
+            "userId" : "USER154907",
+            "ratingCount" : "0",
+            "valid" : "true",
+            "comments" : "fledgling opining call. high pass filtered to lessen wind rumble/traffic noise",
+            "mediaType" : "Audio",
+            "recorder" : [
+               "Olympus LS3"
+            ],
+            "sciName" : "Pyrrhula pyrrhula",
+            "stimulus" : false,
+            "rating" : "0.0",
+            "userProfileUrl" : "https://ebird.org/ebird/profile/MTU0OTA3",
+            "licenseType" : "anylabuse_v1",
+            "obsComments" : null,
+            "age" : null,
+            "previewUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65550271/poster",
+            "thumbnailUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65550271/poster",
+            "catalogId" : "65550271"
+         },
+         {
+            "userProfileUrl" : "https://ebird.org/ebird/profile/MzQ2NjMw",
+            "rating" : "0.0",
+            "obsComments" : null,
+            "licenseType" : "anylabuse_v1",
+            "previewUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65518511/poster",
+            "catalogId" : "65518511",
+            "thumbnailUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65518511/poster",
+            "age" : null,
+            "userId" : "USER346630",
+            "valid" : "true",
+            "ratingCount" : "0",
+            "eBirdChecklistUrl" : "https://ebird.org/ebird/view/checklist/S37832320",
+            "speciesCode" : "eurbul",
+            "stimulus" : false,
+            "sciName" : "Pyrrhula pyrrhula",
+            "mediaType" : "Audio",
+            "recorder" : null,
+            "comments" : null,
+            "location" : "Gralhós, Montalegre, Vila Real, Portugal",
+            "specimenUrl" : "https://macaulaylibrary.org/asset/65518511",
+            "sex" : null,
+            "source" : "ebird",
+            "eBirdChecklistId" : "S37832320",
+            "collected" : false,
+            "assetId" : "65518511",
+            "locationLine1" : "Gralhós",
+            "obsDttm" : "19 Jun 2017",
+            "behaviors" : null,
+            "specimenIds" : null,
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65518511/spectrogram_small",
+            "userDisplayName" : "Pedro  Filipe Pereira",
+            "microphone" : null,
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/65518511/audio",
+            "commonName" : "Eurasian Bullfinch",
+            "homeArchive" : null,
+            "accessories" : null,
+            "locationLine2" : "Montalegre, Vila Real, Portugal",
+            "subjectData" : [
+               {
+                  "comName" : "Eurasian Bullfinch",
+                  "sciName" : "Pyrrhula pyrrhula",
+                  "ageSexCounts" : [],
+                  "speciesCode" : "eurbul",
+                  "subjectTags" : {}
+               }
+            ]
+         },
+         {
+            "licenseType" : "anylabuse_v1",
+            "obsComments" : "1 casal em habitat propicio à nidificação.",
+            "userProfileUrl" : "https://ebird.org/ebird/profile/MzQ2NjMw",
+            "rating" : "1.0",
+            "age" : null,
+            "catalogId" : "59934231",
+            "thumbnailUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/59934231/poster",
+            "previewUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/59934231/poster",
+            "speciesCode" : "eurbul",
+            "eBirdChecklistUrl" : "https://ebird.org/ebird/view/checklist/S37283738",
+            "valid" : "true",
+            "ratingCount" : "1",
+            "userId" : "USER346630",
+            "recorder" : null,
+            "mediaType" : "Audio",
+            "comments" : null,
+            "stimulus" : false,
+            "sciName" : "Pyrrhula pyrrhula",
+            "source" : "ebird",
+            "location" : "E277N207, Lousã, Coimbra, Portugal",
+            "specimenUrl" : "https://macaulaylibrary.org/asset/59934231",
+            "sex" : null,
+            "behaviors" : null,
+            "specimenIds" : null,
+            "locationLine1" : "E277N207",
+            "obsDttm" : "16 May 2017",
+            "eBirdChecklistId" : "S37283738",
+            "assetId" : "59934231",
+            "collected" : false,
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/59934231/audio",
+            "microphone" : null,
+            "userDisplayName" : "Pedro  Filipe Pereira",
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/59934231/spectrogram_small",
+            "subjectData" : [
+               {
+                  "subjectTags" : {},
+                  "speciesCode" : "eurbul",
+                  "ageSexCounts" : [],
+                  "comName" : "Eurasian Bullfinch",
+                  "sciName" : "Pyrrhula pyrrhula"
+               }
+            ],
+            "locationLine2" : "Lousã, Coimbra, Portugal",
+            "homeArchive" : null,
+            "commonName" : "Eurasian Bullfinch",
+            "accessories" : null
+         },
+         {
+            "subjectData" : [
+               {
+                  "ageSexCounts" : [
+                     {
+                        "localizedSexString" : "Male",
+                        "localizedString" : "Male",
+                        "age" : "unknown",
+                        "count" : -1,
+                        "localizedAgeString" : "Unknown",
+                        "sex" : "male"
+                     }
+                  ],
+                  "sciName" : "Pyrrhula pyrrhula",
+                  "comName" : "Eurasian Bullfinch",
+                  "subjectTags" : {
+                     "sounds" : [
+                        {
+                           "localizedString" : "Song",
+                           "key" : "song"
+                        }
+                     ]
+                  },
+                  "speciesCode" : "eurbul"
+               }
+            ],
+            "locationLine2" : "Västra Götalands län [SE-14], Sweden",
+            "commonName" : "Eurasian Bullfinch",
+            "accessories" : null,
+            "homeArchive" : null,
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/59173381/audio",
+            "microphone" : null,
+            "userDisplayName" : "Patrik Åberg",
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/59173381/spectrogram_small",
+            "specimenIds" : null,
+            "behaviors" : "Song",
+            "obsDttm" : "29 Mar 2014",
+            "locationLine1" : "Stora Valsjön, Unden",
+            "collected" : false,
+            "assetId" : "59173381",
+            "eBirdChecklistId" : "S37115530",
+            "source" : "ebird",
+            "sex" : "Male",
+            "specimenUrl" : "https://macaulaylibrary.org/asset/59173381",
+            "location" : "Stora Valsjön, Unden, Västra Götalands län [SE-14], Sweden",
+            "comments" : null,
+            "recorder" : null,
+            "mediaType" : "Audio",
+            "sciName" : "Pyrrhula pyrrhula",
+            "stimulus" : false,
+            "speciesCode" : "eurbul",
+            "eBirdChecklistUrl" : "https://ebird.org/ebird/view/checklist/S37115530",
+            "ratingCount" : "1",
+            "valid" : "true",
+            "userId" : "USER831919",
+            "age" : "Unknown",
+            "thumbnailUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/59173381/poster",
+            "catalogId" : "59173381",
+            "previewUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/59173381/poster",
+            "licenseType" : "anylabuse_v1",
+            "obsComments" : null,
+            "rating" : "4.0",
+            "userProfileUrl" : null
+         },
+         {
+            "age" : null,
+            "previewUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/59172651/poster",
+            "thumbnailUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/59172651/poster",
+            "catalogId" : "59172651",
+            "rating" : "4.0",
+            "userProfileUrl" : null,
+            "licenseType" : "anylabuse_v1",
+            "obsComments" : null,
+            "comments" : null,
+            "mediaType" : "Audio",
+            "recorder" : null,
+            "sciName" : "Pyrrhula pyrrhula",
+            "stimulus" : false,
+            "eBirdChecklistUrl" : "https://ebird.org/ebird/view/checklist/S37115352",
+            "speciesCode" : "eurbul",
+            "userId" : "USER831919",
+            "ratingCount" : "2",
+            "valid" : "true",
+            "obsDttm" : "13 Oct 2010",
+            "locationLine1" : "Ottenby NR",
+            "specimenIds" : null,
+            "behaviors" : "Call",
+            "collected" : false,
+            "assetId" : "59172651",
+            "eBirdChecklistId" : "S37115352",
+            "source" : "ebird",
+            "sex" : null,
+            "specimenUrl" : "https://macaulaylibrary.org/asset/59172651",
+            "location" : "Ottenby NR, Kalmar län [SE-08], Sweden",
+            "locationLine2" : "Kalmar län [SE-08], Sweden",
+            "subjectData" : [
+               {
+                  "sciName" : "Pyrrhula pyrrhula",
+                  "comName" : "Eurasian Bullfinch",
+                  "ageSexCounts" : [],
+                  "speciesCode" : "eurbul",
+                  "subjectTags" : {
+                     "sounds" : [
+                        {
+                           "key" : "call",
+                           "localizedString" : "Call"
+                        }
+                     ]
+                  }
+               }
+            ],
+            "accessories" : null,
+            "commonName" : "Eurasian Bullfinch",
+            "homeArchive" : null,
+            "microphone" : null,
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/59172651/audio",
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/59172651/spectrogram_small",
+            "userDisplayName" : "Patrik Åberg"
+         },
+         {
+            "sciName" : "Pyrrhula pyrrhula",
+            "stimulus" : false,
+            "comments" : null,
+            "recorder" : [
+               "iPhone"
+            ],
+            "mediaType" : "Audio",
+            "userId" : "USER114260",
+            "ratingCount" : "0",
+            "valid" : "true",
+            "eBirdChecklistUrl" : "https://ebird.org/ebird/view/checklist/S36004476",
+            "speciesCode" : "eurbul",
+            "previewUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/56373341/poster",
+            "thumbnailUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/56373341/poster",
+            "catalogId" : "56373341",
+            "age" : null,
+            "rating" : "0.0",
+            "userProfileUrl" : "https://ebird.org/ebird/profile/MTE0MjYw",
+            "licenseType" : "anylabuse_v1",
+            "obsComments" : null,
+            "commonName" : "Eurasian Bullfinch",
+            "homeArchive" : null,
+            "accessories" : null,
+            "locationLine2" : "Bern, Switzerland",
+            "subjectData" : [
+               {
+                  "sciName" : "Pyrrhula pyrrhula",
+                  "comName" : "Eurasian Bullfinch",
+                  "ageSexCounts" : [],
+                  "subjectTags" : {},
+                  "speciesCode" : "eurbul"
+               }
+            ],
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/56373341/spectrogram_small",
+            "userDisplayName" : "Samuel Burckhardt",
+            "microphone" : null,
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/56373341/audio",
+            "collected" : false,
+            "assetId" : "56373341",
+            "eBirdChecklistId" : "S36004476",
+            "obsDttm" : "16 Apr 2017",
+            "locationLine1" : "CH-BE-Hasliberg-1 Unterschüfeli",
+            "specimenIds" : null,
+            "behaviors" : null,
+            "specimenUrl" : "https://macaulaylibrary.org/asset/56373341",
+            "sex" : null,
+            "location" : "CH-BE-Hasliberg-1 Unterschüfeli, Bern, Switzerland",
+            "source" : "ebird"
+         },
+         {
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/54010901/audio",
+            "microphone" : null,
+            "userDisplayName" : "Jorge Leitão",
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/54010901/spectrogram_small",
+            "subjectData" : [
+               {
+                  "ageSexCounts" : [],
+                  "comName" : "Eurasian Bullfinch",
+                  "sciName" : "Pyrrhula pyrrhula",
+                  "speciesCode" : "eurbul",
+                  "subjectTags" : {}
+               }
+            ],
+            "locationLine2" : "Vila Nova de Cerveira, Viana do Castelo, Portugal",
+            "commonName" : "Eurasian Bullfinch",
+            "homeArchive" : null,
+            "accessories" : null,
+            "source" : "ebird",
+            "location" : "Margem do Rio Minho, Vila Nova de Cerveira, Viana do Castelo, Portugal",
+            "specimenUrl" : "https://macaulaylibrary.org/asset/54010901",
+            "sex" : null,
+            "specimenIds" : null,
+            "behaviors" : null,
+            "obsDttm" : "7 Apr 2017",
+            "locationLine1" : "Margem do Rio Minho",
+            "collected" : false,
+            "assetId" : "54010901",
+            "eBirdChecklistId" : "S35796122",
+            "speciesCode" : "eurbul",
+            "eBirdChecklistUrl" : "https://ebird.org/ebird/view/checklist/S35796122",
+            "ratingCount" : "0",
+            "valid" : "true",
+            "userId" : "USER609938",
+            "comments" : null,
+            "mediaType" : "Audio",
+            "recorder" : null,
+            "sciName" : "Pyrrhula pyrrhula",
+            "stimulus" : false,
+            "licenseType" : "anylabuse_v1",
+            "obsComments" : null,
+            "rating" : "0.0",
+            "userProfileUrl" : "https://ebird.org/ebird/profile/NjA5OTM4",
+            "age" : null,
+            "thumbnailUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/54010901/poster",
+            "catalogId" : "54010901",
+            "previewUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/54010901/poster"
+         },
+         {
+            "subjectData" : [
+               {
+                  "comName" : "Eurasian Bullfinch (Eurasian)",
+                  "sciName" : "Pyrrhula pyrrhula [pyrrhula Group]",
+                  "ageSexCounts" : [
+                     {
+                        "count" : -1,
+                        "age" : "adult",
+                        "localizedString" : "Adult Male",
+                        "localizedSexString" : "Male",
+                        "localizedAgeString" : "Adult",
+                        "sex" : "male"
+                     }
+                  ],
+                  "speciesCode" : "eurbul2",
+                  "subjectTags" : {
+                     "sounds" : [
+                        {
+                           "key" : "song",
+                           "localizedString" : "Song"
+                        }
+                     ]
+                  }
+               }
+            ],
+            "locationLine2" : "Thüringen, Germany",
+            "homeArchive" : null,
+            "commonName" : "Eurasian Bullfinch (Eurasian)",
+            "accessories" : null,
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/48473321/audio",
+            "microphone" : null,
+            "userDisplayName" : "Andrew Durso",
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/48473321/spectrogram_small",
+            "specimenIds" : null,
+            "behaviors" : "Song",
+            "obsDttm" : "16 Feb 2017",
+            "locationLine1" : "Jenaer Forst",
+            "collected" : false,
+            "assetId" : "48473321",
+            "eBirdChecklistId" : "S34399729",
+            "source" : "ebird",
+            "location" : "Jenaer Forst, Thüringen, Germany",
+            "specimenUrl" : "https://macaulaylibrary.org/asset/48473321",
+            "sex" : "Male",
+            "comments" : null,
+            "mediaType" : "Audio",
+            "recorder" : [
+               "Samsung Galaxy S4"
+            ],
+            "sciName" : "Pyrrhula pyrrhula [pyrrhula Group]",
+            "stimulus" : false,
+            "speciesCode" : "eurbul2",
+            "eBirdChecklistUrl" : "https://ebird.org/ebird/view/checklist/S34399729",
+            "ratingCount" : "2",
+            "valid" : "true",
+            "userId" : "USER205893",
+            "age" : "Adult",
+            "thumbnailUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/48473321/poster",
+            "catalogId" : "48473321",
+            "previewUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/48473321/poster",
+            "obsComments" : "One male seen bathing in puddle on road.",
+            "licenseType" : "anylabuse_v1",
+            "rating" : "1.5",
+            "userProfileUrl" : "https://ebird.org/ebird/profile/MjA1ODkz"
+         },
+         {
+            "sciName" : "Pyrrhula pyrrhula",
+            "stimulus" : false,
+            "comments" : null,
+            "recorder" : null,
+            "mediaType" : "Audio",
+            "userId" : "USER609938",
+            "ratingCount" : "0",
+            "valid" : "true",
+            "eBirdChecklistUrl" : "https://ebird.org/ebird/view/checklist/S33787541",
+            "speciesCode" : "eurbul",
+            "previewUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/45953481/poster",
+            "thumbnailUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/45953481/poster",
+            "catalogId" : "45953481",
+            "age" : null,
+            "rating" : "0.0",
+            "userProfileUrl" : "https://ebird.org/ebird/profile/NjA5OTM4",
+            "obsComments" : "Bando",
+            "licenseType" : "anylabuse_v1",
+            "homeArchive" : null,
+            "commonName" : "Eurasian Bullfinch",
+            "accessories" : null,
+            "locationLine2" : "Braga, Braga, Portugal",
+            "subjectData" : [
+               {
+                  "subjectTags" : {
+                     "sounds" : [
+                        {
+                           "key" : "song",
+                           "localizedString" : "Song"
+                        }
+                     ]
+                  },
+                  "speciesCode" : "eurbul",
+                  "comName" : "Eurasian Bullfinch",
+                  "sciName" : "Pyrrhula pyrrhula",
+                  "ageSexCounts" : []
+               }
+            ],
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/45953481/spectrogram_small",
+            "userDisplayName" : "Jorge Leitão",
+            "microphone" : null,
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/45953481/audio",
+            "collected" : false,
+            "assetId" : "45953481",
+            "eBirdChecklistId" : "S33787541",
+            "obsDttm" : "19 Jan 2017",
+            "locationLine1" : "Sete Fontes",
+            "specimenIds" : null,
+            "behaviors" : "Song",
+            "specimenUrl" : "https://macaulaylibrary.org/asset/45953481",
+            "location" : "Sete Fontes, Braga, Braga, Portugal",
+            "sex" : null,
+            "source" : "ebird"
+         },
+         {
+            "mediaType" : "Audio",
+            "recorder" : [
+               "Samsung Galaxy S4"
+            ],
+            "comments" : null,
+            "stimulus" : false,
+            "sciName" : "Pyrrhula pyrrhula [pyrrhula Group]",
+            "speciesCode" : "eurbul2",
+            "eBirdChecklistUrl" : "https://ebird.org/ebird/view/checklist/S32442387",
+            "valid" : "true",
+            "ratingCount" : "1",
+            "userId" : "USER205893",
+            "age" : "Adult",
+            "catalogId" : "39396381",
+            "thumbnailUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/39396381/poster",
+            "previewUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/39396381/poster",
+            "licenseType" : "anylabuse_v1",
+            "obsComments" : null,
+            "userProfileUrl" : "https://ebird.org/ebird/profile/MjA1ODkz",
+            "rating" : "1.0",
+            "subjectData" : [
+               {
+                  "sciName" : "Pyrrhula pyrrhula [pyrrhula Group]",
+                  "comName" : "Eurasian Bullfinch (Eurasian)",
+                  "ageSexCounts" : [
+                     {
+                        "localizedAgeString" : "Adult",
+                        "sex" : "male",
+                        "age" : "adult",
+                        "count" : -1,
+                        "localizedString" : "Adult Male",
+                        "localizedSexString" : "Male"
+                     }
+                  ],
+                  "subjectTags" : {
+                     "sounds" : [
+                        {
+                           "localizedString" : "Call",
+                           "key" : "call"
+                        }
+                     ]
+                  },
+                  "speciesCode" : "eurbul2"
+               }
+            ],
+            "locationLine2" : "Thüringen, Germany",
+            "accessories" : null,
+            "commonName" : "Eurasian Bullfinch (Eurasian)",
+            "homeArchive" : null,
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/39396381/audio",
+            "microphone" : null,
+            "userDisplayName" : "Andrew Durso",
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/39396381/spectrogram_small",
+            "behaviors" : "Call",
+            "specimenIds" : null,
+            "locationLine1" : "Jena - Paradies Park",
+            "obsDttm" : "9 Nov 2016",
+            "eBirdChecklistId" : "S32442387",
+            "assetId" : "39396381",
+            "collected" : false,
+            "source" : "ebird",
+            "sex" : "Male",
+            "specimenUrl" : "https://macaulaylibrary.org/asset/39396381",
+            "location" : "Jena - Paradies Park, Thüringen, Germany"
+         },
+         {
+            "recorder" : null,
+            "mediaType" : "Audio",
+            "comments" : null,
+            "stimulus" : false,
+            "sciName" : "Pyrrhula pyrrhula",
+            "eBirdChecklistUrl" : "https://ebird.org/ebird/view/checklist/S32332100",
+            "speciesCode" : "eurbul",
+            "userId" : "USER272686",
+            "valid" : "true",
+            "ratingCount" : "0",
+            "age" : null,
+            "previewUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/38787871/poster",
+            "catalogId" : "38787871",
+            "thumbnailUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/38787871/poster",
+            "userProfileUrl" : "https://ebird.org/ebird/profile/MjcyNjg2",
+            "rating" : "0.0",
+            "obsComments" : null,
+            "licenseType" : "anylabuse_v1",
+            "locationLine2" : "Golegã, Santarém, Portugal",
+            "subjectData" : [
+               {
+                  "sciName" : "Pyrrhula pyrrhula",
+                  "comName" : "Eurasian Bullfinch",
+                  "ageSexCounts" : [],
+                  "subjectTags" : {
+                     "sounds" : [
+                        {
+                           "localizedString" : "Flight Call",
+                           "key" : "flight_call"
+                        }
+                     ]
+                  },
+                  "speciesCode" : "eurbul"
+               }
+            ],
+            "accessories" : null,
+            "commonName" : "Eurasian Bullfinch",
+            "homeArchive" : null,
+            "microphone" : null,
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/38787871/audio",
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/38787871/spectrogram_small",
+            "userDisplayName" : "Paulo Alves",
+            "locationLine1" : "RN Paul do Boquilobo--área geral",
+            "obsDttm" : "1 Nov 2016",
+            "behaviors" : "Flight Call",
+            "specimenIds" : null,
+            "eBirdChecklistId" : "S32332100",
+            "collected" : false,
+            "assetId" : "38787871",
+            "source" : "ebird",
+            "specimenUrl" : "https://macaulaylibrary.org/asset/38787871",
+            "location" : "RN Paul do Boquilobo--área geral, Golegã, Santarém, Portugal",
+            "sex" : null
+         },
+         {
+            "thumbnailUrl" : "https://macaulaylibrary.org/media/Spectrograms/audio/poster/220/0/206/206922.jpg",
+            "catalogId" : "206922",
+            "previewUrl" : "https://macaulaylibrary.org/media/Spectrograms/audio/image/320/0/206/206922.jpg",
+            "age" : "Adult",
+            "obsComments" : null,
+            "licenseType" : "other",
+            "rating" : "2.0",
+            "userProfileUrl" : "https://ebird.org/ebird/profile/MjM5Nzk3",
+            "sciName" : "Pyrrhula pyrrhula [pyrrhula Group]",
+            "stimulus" : false,
+            "comments" : "calls from spruce.\r\nML: 150 Hz AUHipass filter applied in soundBlade HD.",
+            "recorder" : [
+               "Roland R-26"
+            ],
+            "mediaType" : "Audio",
+            "ratingCount" : "4",
+            "valid" : "true",
+            "userId" : "USER239797",
+            "speciesCode" : "eurbul2",
+            "eBirdChecklistUrl" : null,
+            "assetId" : "206922",
+            "collected" : false,
+            "eBirdChecklistId" : null,
+            "specimenIds" : null,
+            "behaviors" : "Call",
+            "obsDttm" : "9 Jun 2014",
+            "locationLine1" : "0.2 km SE of Signal de Botrange; Province of Liège",
+            "specimenUrl" : "https://macaulaylibrary.org/asset/206922",
+            "sex" : "Unknown",
+            "location" : "0.2 km SE of Signal de Botrange; Province of Liège, Belgium",
+            "source" : "ml",
+            "commonName" : "Eurasian Bullfinch (Eurasian)",
+            "homeArchive" : null,
+            "accessories" : null,
+            "subjectData" : [
+               {
+                  "sciName" : "Pyrrhula pyrrhula [pyrrhula Group]",
+                  "comName" : "Eurasian Bullfinch (Eurasian)",
+                  "ageSexCounts" : [
+                     {
+                        "localizedSexString" : "Unknown",
+                        "localizedString" : "Adult – 1",
+                        "age" : "adult",
+                        "count" : 1,
+                        "localizedAgeString" : "Adult",
+                        "sex" : "unknown"
+                     }
+                  ],
+                  "subjectTags" : {
+                     "sounds" : [
+                        {
+                           "key" : "call",
+                           "localizedString" : "Call"
+                        }
+                     ]
+                  },
+                  "speciesCode" : "eurbul2"
+               }
+            ],
+            "locationLine2" : "Belgium",
+            "userDisplayName" : "Paul van Els",
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/206922/spectrogram_small",
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/206922/audio",
+            "microphone" : [
+               "Sennheiser ME 67"
+            ]
+         },
+         {
+            "age" : "Adult",
+            "catalogId" : "185799",
+            "thumbnailUrl" : "https://macaulaylibrary.org/media/Spectrograms/audio/poster/220/0/185/185799.jpg",
+            "previewUrl" : "https://macaulaylibrary.org/media/Spectrograms/audio/image/320/0/185/185799.jpg",
+            "licenseType" : "other",
+            "obsComments" : null,
+            "userProfileUrl" : null,
+            "rating" : "2.0",
+            "mediaType" : "Audio",
+            "recorder" : [
+               "SONY TC-D5 PRO II"
+            ],
+            "comments" : "Identified by recordist as Pyrrhula pyrrhula pyrrhula.",
+            "stimulus" : false,
+            "sciName" : "Pyrrhula pyrrhula [pyrrhula Group]",
+            "speciesCode" : "eurbul2",
+            "eBirdChecklistUrl" : null,
+            "valid" : "true",
+            "ratingCount" : "4",
+            "userId" : "USER832715",
+            "behaviors" : "Call",
+            "specimenIds" : null,
+            "locationLine1" : "Central Macedonia; Mt Olympus trail above Prionia",
+            "obsDttm" : "24 May 2000",
+            "eBirdChecklistId" : null,
+            "collected" : false,
+            "assetId" : "185799",
+            "source" : "ml",
+            "specimenUrl" : "https://macaulaylibrary.org/asset/185799",
+            "location" : "Central Macedonia; Mt Olympus trail above Prionia, Greece",
+            "sex" : "Female",
+            "subjectData" : [
+               {
+                  "sciName" : "Pyrrhula pyrrhula [pyrrhula Group]",
+                  "comName" : "Eurasian Bullfinch (Eurasian)",
+                  "ageSexCounts" : [
+                     {
+                        "localizedSexString" : "Female",
+                        "localizedString" : "Adult Female – 1",
+                        "count" : 1,
+                        "age" : "adult",
+                        "sex" : "female",
+                        "localizedAgeString" : "Adult"
+                     }
+                  ],
+                  "speciesCode" : "eurbul2",
+                  "subjectTags" : {
+                     "sounds" : [
+                        {
+                           "localizedString" : "Call",
+                           "key" : "call"
+                        }
+                     ]
+                  }
+               }
+            ],
+            "locationLine2" : "Greece",
+            "homeArchive" : null,
+            "commonName" : "Eurasian Bullfinch (Eurasian)",
+            "accessories" : null,
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/185799/audio",
+            "microphone" : [
+               "Sennheiser ME 66"
+            ],
+            "userDisplayName" : "Krzysztof Zyskowski",
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/185799/spectrogram_small"
+         },
+         {
+            "recorder" : null,
+            "mediaType" : "Audio",
+            "comments" : "69-28\r\nBox notes: 69-27. Bullfinches 69-27 May   - May 22, 1969. Back: lg Abbate male - agg call.",
+            "stimulus" : false,
+            "sciName" : "Pyrrhula pyrrhula",
+            "eBirdChecklistUrl" : null,
+            "speciesCode" : "eurbul",
+            "userId" : "USER832939",
+            "valid" : "true",
+            "ratingCount" : "4",
+            "age" : null,
+            "previewUrl" : "https://macaulaylibrary.org/media/Spectrograms/audio/image/320/0/172/172958.jpg",
+            "catalogId" : "172958",
+            "thumbnailUrl" : "https://macaulaylibrary.org/media/Spectrograms/audio/poster/220/0/172/172958.jpg",
+            "userProfileUrl" : null,
+            "rating" : "2.0",
+            "licenseType" : "other",
+            "obsComments" : null,
+            "locationLine2" : "",
+            "subjectData" : [
+               {
+                  "ageSexCounts" : [],
+                  "sciName" : "Pyrrhula pyrrhula",
+                  "comName" : "Eurasian Bullfinch",
+                  "subjectTags" : {},
+                  "speciesCode" : "eurbul"
+               }
+            ],
+            "accessories" : null,
+            "commonName" : "Eurasian Bullfinch",
+            "homeArchive" : null,
+            "microphone" : null,
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/172958/audio",
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/172958/spectrogram_small",
+            "userDisplayName" : "Paul C. Mundinger",
+            "locationLine1" : "",
+            "obsDttm" : "May 1969",
+            "behaviors" : null,
+            "specimenIds" : null,
+            "eBirdChecklistId" : null,
+            "assetId" : "172958",
+            "collected" : false,
+            "source" : "ml",
+            "location" : "",
+            "specimenUrl" : "https://macaulaylibrary.org/asset/172958",
+            "sex" : null
+         },
+         {
+            "catalogId" : "13003",
+            "thumbnailUrl" : "https://macaulaylibrary.org/media/Spectrograms/audio/poster/220/0/13/13003.jpg",
+            "previewUrl" : "https://macaulaylibrary.org/media/Spectrograms/audio/image/320/0/13/13003.jpg",
+            "age" : null,
+            "obsComments" : null,
+            "licenseType" : "other",
+            "userProfileUrl" : null,
+            "rating" : "2.0",
+            "stimulus" : false,
+            "sciName" : "Pyrrhula pyrrhula [pyrrhula Group]",
+            "recorder" : [
+               "FI-CORD 202"
+            ],
+            "mediaType" : "Audio",
+            "comments" : null,
+            "valid" : "true",
+            "ratingCount" : "4",
+            "userId" : "USER832317",
+            "speciesCode" : "eurbul2",
+            "eBirdChecklistUrl" : null,
+            "eBirdChecklistId" : null,
+            "collected" : false,
+            "assetId" : "13003",
+            "behaviors" : null,
+            "specimenIds" : null,
+            "locationLine1" : "Tippings Hill",
+            "obsDttm" : "2 Mar 1963",
+            "specimenUrl" : "https://macaulaylibrary.org/asset/13003",
+            "location" : "Tippings Hill, United Kingdom",
+            "sex" : null,
+            "source" : "ml",
+            "commonName" : "Eurasian Bullfinch (Eurasian)",
+            "accessories" : [
+               "Parabola 61cm (24in)"
+            ],
+            "homeArchive" : null,
+            "subjectData" : [
+               {
+                  "sciName" : "Pyrrhula pyrrhula [pyrrhula Group]",
+                  "comName" : "Eurasian Bullfinch (Eurasian)",
+                  "ageSexCounts" : [],
+                  "subjectTags" : {},
+                  "speciesCode" : "eurbul2"
+               }
+            ],
+            "locationLine2" : "United Kingdom",
+            "userDisplayName" : "A. G. Field",
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/13003/spectrogram_small",
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/13003/audio",
+            "microphone" : null
+         },
+         {
+            "commonName" : "Eurasian Bullfinch",
+            "homeArchive" : null,
+            "accessories" : null,
+            "subjectData" : [
+               {
+                  "subjectTags" : {},
+                  "speciesCode" : "eurbul",
+                  "comName" : "Eurasian Bullfinch",
+                  "sciName" : "Pyrrhula pyrrhula",
+                  "ageSexCounts" : []
+               }
+            ],
+            "locationLine2" : "Vaud, Switzerland",
+            "userDisplayName" : "Raphaël Nussbaumer",
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/29993721/spectrogram_small",
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/29993721/audio",
+            "microphone" : null,
+            "eBirdChecklistId" : "S30130985",
+            "collected" : false,
+            "assetId" : "29993721",
+            "behaviors" : null,
+            "specimenIds" : null,
+            "locationLine1" : "46.48x6.195 - 8 Jun 2016 04:55",
+            "obsDttm" : "8 Jun 2016",
+            "sex" : null,
+            "specimenUrl" : "https://macaulaylibrary.org/asset/29993721",
+            "location" : "46.48x6.195 - 8 Jun 2016 04:55, Vaud, Switzerland",
+            "source" : "ebird",
+            "stimulus" : false,
+            "sciName" : "Pyrrhula pyrrhula",
+            "recorder" : null,
+            "mediaType" : "Audio",
+            "comments" : null,
+            "valid" : "true",
+            "ratingCount" : "1",
+            "userId" : "USER497615",
+            "speciesCode" : "eurbul",
+            "eBirdChecklistUrl" : "https://ebird.org/ebird/view/checklist/S30130985",
+            "catalogId" : "29993721",
+            "thumbnailUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/29993721/poster",
+            "previewUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/29993721/poster",
+            "age" : null,
+            "licenseType" : "anylabuse_v1",
+            "obsComments" : null,
+            "userProfileUrl" : "https://ebird.org/ebird/profile/NDk3NjE1",
+            "rating" : "2.0"
+         },
+         {
+            "specimenIds" : null,
+            "behaviors" : null,
+            "obsDttm" : "14 Nov 2015",
+            "locationLine1" : "Sul de Caldas da Felgueira",
+            "collected" : false,
+            "assetId" : "21081421",
+            "eBirdChecklistId" : "S25853942",
+            "source" : "ebird",
+            "specimenUrl" : "https://macaulaylibrary.org/asset/21081421",
+            "location" : "Sul de Caldas da Felgueira, Nelas, Viseu, Portugal",
+            "sex" : null,
+            "subjectData" : [
+               {
+                  "ageSexCounts" : [],
+                  "sciName" : "Pyrrhula pyrrhula",
+                  "comName" : "Eurasian Bullfinch",
+                  "speciesCode" : "eurbul",
+                  "subjectTags" : {}
+               }
+            ],
+            "locationLine2" : "Nelas, Viseu, Portugal",
+            "homeArchive" : null,
+            "commonName" : "Eurasian Bullfinch",
+            "accessories" : null,
+            "mediaUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/21081421/audio",
+            "microphone" : null,
+            "userDisplayName" : "Pedro Nicolau",
+            "largeUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/21081421/spectrogram_small",
+            "age" : null,
+            "thumbnailUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/21081421/poster",
+            "catalogId" : "21081421",
+            "previewUrl" : "https://download.ams.birds.cornell.edu/api/v1/asset/21081421/poster",
+            "licenseType" : "anylabuse_v1",
+            "obsComments" : null,
+            "rating" : "3.0",
+            "userProfileUrl" : "https://ebird.org/ebird/profile/MzU2NTMz",
+            "comments" : null,
+            "recorder" : null,
+            "mediaType" : "Audio",
+            "sciName" : "Pyrrhula pyrrhula",
+            "stimulus" : false,
+            "speciesCode" : "eurbul",
+            "eBirdChecklistUrl" : "https://ebird.org/ebird/view/checklist/S25853942",
+            "ratingCount" : "1",
+            "valid" : "true",
+            "userId" : "USER356533"
+         }
+      ],
+      "count" : 26,
+      "facetInfo" : {
+         "assetFormatCode" : {
+            "photo" : "541",
+            "audio" : "26",
+            "video" : "1"
+         }
+      }
+   },
+   "ratingApiPrefix" : "/rating-api/v1",
+   "prefs" : {
+      "DISPLAY_SCIENTIFIC_NAME" : true,
+      "USE_24H" : true,
+      "COMMON_NAME_LOCALE" : null,
+      "effectiveCommonNameLocale" : "en_US",
+      "DISPLAY_COMMON_NAME" : true
+   },
+   "searchRequestForm" : {
+      "searchField" : "species",
+      "edi" : "all",
+      "coll" : "all",
+      "tda" : 31,
+      "pla" : "all",
+      "start" : 0,
+      "taxonCode" : "eurbul",
+      "fyr" : 1900,
+      "acc" : "all",
+      "bmo" : 1,
+      "yr" : "YALL",
+      "tmo" : 12,
+      "lic" : "all",
+      "emo" : 12,
+      "mr" : "M1TO12",
+      "view" : "Gallery",
+      "sort" : "upload_date_desc",
+      "activeFilters" : [
+         {
+            "shouldShowPrefix" : false,
+            "filterName" : "TAXON",
+            "resetCommand" : "reset_taxon",
+            "friendlySummary" : "Eurasian Bullfinch",
+            "displayName" : "Species"
+         },
+         {
+            "displayName" : "MEDIA_TYPE",
+            "friendlySummary" : "Audio",
+            "shouldShowPrefix" : false,
+            "resetCommand" : "reset_media_type",
+            "filterName" : "MEDIA_TYPE",
+            "selectedTypes" : [
+               "A"
+            ]
+         }
+      ],
+      "count" : 30,
+      "fda" : 1,
+      "cap" : "all",
+      "q" : "Eurasian Bullfinch - Pyrrhula pyrrhula",
+      "by" : 1900,
+      "spec" : false,
+      "action" : "show",
+      "catId" : "",
+      "mediaType" : "a",
+      "ey" : 2017,
+      "rev" : "all",
+      "tyr" : 2017,
+      "tax" : "all",
+      "fmo" : 1,
+      "req" : false
+   }
+}

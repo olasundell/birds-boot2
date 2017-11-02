@@ -24,5 +24,4 @@ public class FlickrServiceTest {
 			.build());
 		Assert.assertNotNull(result);
 	}
-
 }

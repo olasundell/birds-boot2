@@ -6,9 +6,8 @@ import se.atrosys.birds.flickr.FlickrService;
 import se.atrosys.birds.model.Bird;
 import se.atrosys.birds.model.BirdPhoto;
 import se.atrosys.birds.model.Response;
-import se.atrosys.birds.xenocanto.XenoCantoService;
+import se.atrosys.birds.media.xenocanto.XenoCantoService;
 
-import javax.xml.bind.JAXBException;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;

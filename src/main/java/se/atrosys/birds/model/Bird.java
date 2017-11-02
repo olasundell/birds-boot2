@@ -60,6 +60,8 @@ public class Bird {
 	@JsonManagedReference
 	private List<BirdName> birdNames;
 
+	private String ebirdTaxonId;
+
 	@ManyToOne
 	@JsonBackReference
 	private Genus genus;
