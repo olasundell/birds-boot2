@@ -82,7 +82,8 @@ public class EbirdService {
 			String tra = translation.get(key);
 
 			if (!sciNameMap.containsKey(tra)) {
-				throw new IllegalStateException("Sci name map does not contain " + tra + ", translation for " + bird.getScientificName());
+				throw new IllegalStateException("Sci name map does not contain " + tra + ", translation for " +
+					bird.getScientificName() + " (" + bird.namesByLanguage().get("english") + ")");
 			} else {
 				key = tra;
 			}

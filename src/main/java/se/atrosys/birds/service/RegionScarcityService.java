@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
+import se.atrosys.birds.model.Scarcity;
 import se.atrosys.birds.taxonomy.avibase.AviBaseRegionalScarcity;
 import se.atrosys.birds.taxonomy.avibase.AviBaseResult;
 import se.atrosys.birds.model.Bird;
@@ -15,8 +16,11 @@ import se.atrosys.birds.repository.RegionalScarcityRepository;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
+import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -29,6 +33,32 @@ public class RegionScarcityService {
 	private final RegionRepository regionRepository;
 	private final RegionalScarcityRepository regionalScarcityRepository;
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
+	private static final Set<String> UNFORTUNATELY_PROBABLY_EXTINCT = new HashSet<>();
+
+	static {
+		UNFORTUNATELY_PROBABLY_EXTINCT.add("Oceanodroma macrodactyla");
+		UNFORTUNATELY_PROBABLY_EXTINCT.add("Pterodroma caribbaea");
+		UNFORTUNATELY_PROBABLY_EXTINCT.add("Siphonorhis americana");
+		UNFORTUNATELY_PROBABLY_EXTINCT.add("Psittacara maugei");
+		UNFORTUNATELY_PROBABLY_EXTINCT.add("Melamprosops phaeosoma");
+		UNFORTUNATELY_PROBABLY_EXTINCT.add("Psittirostra psittacea");
+		UNFORTUNATELY_PROBABLY_EXTINCT.add("Anodorhynchus glaucus");
+		UNFORTUNATELY_PROBABLY_EXTINCT.add("Aphanocrex podarces");
+		UNFORTUNATELY_PROBABLY_EXTINCT.add("Nycticorax olsoni");
+		UNFORTUNATELY_PROBABLY_EXTINCT.add("Vanellus macropterus");
+		UNFORTUNATELY_PROBABLY_EXTINCT.add("Ophrysia superciliosa");
+		UNFORTUNATELY_PROBABLY_EXTINCT.add("Tadorna cristata");
+		UNFORTUNATELY_PROBABLY_EXTINCT.add("Rhodonessa caryophyllacea");
+		UNFORTUNATELY_PROBABLY_EXTINCT.add("Alopecoenas norfolkensis");
+		UNFORTUNATELY_PROBABLY_EXTINCT.add("Callaeas cinereus");
+		UNFORTUNATELY_PROBABLY_EXTINCT.add("Zosterops albogularis");
+		UNFORTUNATELY_PROBABLY_EXTINCT.add("Todiramphus gambieri");
+		UNFORTUNATELY_PROBABLY_EXTINCT.add("Cyanoramphus subflavescens");
+		UNFORTUNATELY_PROBABLY_EXTINCT.add("Cyanoramphus erythrotis");
+		UNFORTUNATELY_PROBABLY_EXTINCT.add("Acrocephalus longirostris");
+		UNFORTUNATELY_PROBABLY_EXTINCT.add("Gallinula pacifica");
+		UNFORTUNATELY_PROBABLY_EXTINCT.add("Charmosyna diadema");
+	}
 
 	public RegionScarcityService(BirdService birdService,
 	                             RegionRepository regionRepository,
@@ -56,9 +86,12 @@ public class RegionScarcityService {
 		AviBaseResult result = readRegionFile(region);
 
 		return result.getRegionalScarcities()
-//			.parallelStream()
-			.stream()
+			.parallelStream()
+//			.stream()
+			.filter(abr -> !abr.getScarcities().contains(Scarcity.EXTINCT))
+			.filter(abr -> !UNFORTUNATELY_PROBABLY_EXTINCT.contains(abr.getScientificName()))
 			.map(r -> mapRegionalScarcity(region, r))
+			.filter(Objects::nonNull)
 			.collect(Collectors.toList());
 	}
 

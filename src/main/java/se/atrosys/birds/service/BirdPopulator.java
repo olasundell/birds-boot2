@@ -48,7 +48,7 @@ public class BirdPopulator {
 	}
 
 	public void saveOrder(Order o) {
-		logger.trace("Saving order {}", o.getName());
+		logger.debug("Saving order {}", o.getName());
 
 		Order order = orderRepository.save(o);
 		o.getFamilies().forEach(
@@ -59,7 +59,8 @@ public class BirdPopulator {
 	private Consumer<Family> saveFamily(Order order) {
 		return f -> {
 			f.setOrder(order);
-			f.getGenus().forEach(
+//			f.getGenus().forEach(
+			f.getGenus().parallelStream().forEach(
 				g -> saveGenus(f, g)
 			);
 			Family family = familyRepository.save(f);

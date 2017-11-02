@@ -79,6 +79,12 @@ public class IocTranslationService {
 
 	// difficult conversions
 	private String manualConversions(String ioc, String s) {
+		if (ioc.startsWith("Tangara")) {
+			return ioc.replace("Tangara", "Ixothraupis");
+		} else if (ioc.startsWith("Phrygilus")) {
+			return ioc.replace("Phrygilus", "Geospizopsis");
+		}
+
 		switch (ioc) {
 			case "Cyanocorax luxuosus":
 				return "Cyanocorax yncas";
@@ -115,9 +121,61 @@ public class IocTranslationService {
 				return "Poospiza goeringi";
 			case "Hemispingus rufosuperciliaris":
 				return "Poospiza rufosuperciliaris";
+			case "Hemispingus verticalis":
+				return "Pseudospingus verticalis";
+			case "Hemispingus xanthophthalmus":
+				return "Pseudospingus xanthophthalmus";
+			case "Hemispingus trifasciatus":
+				return "Microspingus trifasciatus";
+			case "Pyrrhocoma ruficeps":
+				return "Thlypopsis pyrrhocoma";
+//			case "Tangara xanthogastra":
+//				return "Ixothraupis xanthogastra";
+//			case "Tangara punctata":
+//				return "Ixothraupis punctata";
+//			case "Tangara guttata":
+//				return "Ixothraupis guttata";
+//			case "Tangara varia":
+//				return "Ixothraupis varia";
+			case "Oreomanes fraseri":
+				return "Conirostrum binghami";
+//			case "Phrygilus unicolor":
+//				return "Geospizopsis unicolor";
+			case "Haplospiza rustica":
+				return "Spodiornis rusticus";
+			case "Diuca speculifera":
+				return "Idiopsar speculifer";
+			case "Poospiza thoracica":
+				return "Castanozoster thoracicus";
+			case "Poospiza alticola":
+				return "Microspingus alticola";
+			case "Poospiza erythrophrys":
+				return "Microspingus erythrophrys";
+			case "Poospiza lateralis":
+				return "Microspingus lateralis";
+			case "Poospiza cabanisi":
+				return "Microspingus cabanisi";
+			case "Poospiza torquata":
+				return "Microspingus torquatus";
+			case "Poospiza melanoleuca":
+				return "Microspingus melanoleucus";
+			case "Poospiza cinerea":
+				return "Microspingus cinereus";
+			case "Compsospiza garleppi":
+				return "Poospiza garleppi";
+			case "Compsospiza baeri":
+				return "Poospiza baeri";
+			case "Saltator atricollis":
+				return "Saltatricula atricollis";
+			case "Cyanocompsa cyanoides":
+			case "Cyanocompsa rothschildii":
+				return "Cyanoloxia cyanoides";
+			case "Cyanocompsa brissonii":
+				return "Cyanoloxia brissonii";
 			default:
 				return s;
 		}
+
 	}
 
 	private String removeSsp(String s) {

@@ -30,7 +30,7 @@ public class LanguageConverter {
 	}
 
 	private static Locale findLocale(String lang) {
-		logger.info("Finding locale for {}", lang);
+		logger.trace("Finding locale for {}", lang);
 		switch (lang) {
 			case "Scientific Name":
 				return Locale.forLanguageTag("la");
