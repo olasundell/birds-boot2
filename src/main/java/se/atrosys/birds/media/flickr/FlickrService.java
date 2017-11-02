@@ -1,4 +1,4 @@
-package se.atrosys.birds.flickr;
+package se.atrosys.birds.media.flickr;
 
 import com.flickr4java.flickr.Flickr;
 import com.flickr4java.flickr.FlickrException;
@@ -14,7 +14,6 @@ import se.atrosys.birds.exception.BirdFlickrException;
 import se.atrosys.birds.model.Bird;
 import se.atrosys.birds.model.BirdPhoto;
 
-import javax.xml.bind.JAXBException;
 import java.io.File;
 import java.util.List;
 import java.util.stream.Collectors;

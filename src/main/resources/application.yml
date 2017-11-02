@@ -19,3 +19,19 @@ spring:
     hibernate:
       ddl-auto: create
     database: postgresql
+
+---
+spring:
+  profiles: postgresql-validate
+
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    name: birds
+    username: birds
+    password: birds
+    url: jdbc:postgresql://localhost/birds
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database: postgresql

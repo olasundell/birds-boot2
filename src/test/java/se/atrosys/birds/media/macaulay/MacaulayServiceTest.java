@@ -49,7 +49,7 @@ public class MacaulayServiceTest {
 				.language(Locale.ENGLISH)
 				.build()))
 			.scientificName("pica pica")
-			.build());
+			.build(), mediaType);
 
 		Assert.assertNotNull(result);
 	}

@@ -12,7 +12,7 @@ import java.util.List;
 @Data
 public class Response {
 	private List<ResponseBird> genusBirds;
-	private String pictureUrl;
+	private Media media;
 	private ResponseBird actualBird;
 
 	@Builder

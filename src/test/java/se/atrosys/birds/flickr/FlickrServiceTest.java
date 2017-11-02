@@ -3,14 +3,12 @@ package se.atrosys.birds.flickr;
 import org.junit.Assert;
 import org.junit.Test;
 import se.atrosys.birds.exception.BirdFlickrException;
+import se.atrosys.birds.media.flickr.FileFetcher;
+import se.atrosys.birds.media.flickr.FlickrService;
 import se.atrosys.birds.model.Bird;
 import se.atrosys.birds.model.BirdPhoto;
 
-import javax.xml.bind.JAXBException;
-
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 /**
  * TODO write documentation

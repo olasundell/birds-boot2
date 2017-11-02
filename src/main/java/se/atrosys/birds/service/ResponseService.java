@@ -1,15 +1,23 @@
 package se.atrosys.birds.service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 import se.atrosys.birds.exception.BirdFlickrException;
-import se.atrosys.birds.flickr.FlickrService;
+import se.atrosys.birds.exception.CountNotFindMediaException;
+import se.atrosys.birds.media.MediaService;
+import se.atrosys.birds.media.flickr.FlickrService;
 import se.atrosys.birds.model.Bird;
 import se.atrosys.birds.model.BirdPhoto;
+import se.atrosys.birds.model.Media;
+import se.atrosys.birds.model.MediaType;
 import se.atrosys.birds.model.Response;
 import se.atrosys.birds.media.xenocanto.XenoCantoService;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 import java.util.Random;
 import java.util.stream.Collectors;
 
@@ -19,23 +27,28 @@ import java.util.stream.Collectors;
 @Component
 public class ResponseService {
 	private final BirdService birdService;
-	private final FlickrService flickrService;
-	private final XenoCantoService xenoCantoService;
+	private final MediaService mediaService;
+	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
 	public ResponseService(BirdService birdService,
-	                       FlickrService flickrService, XenoCantoService xenoCantoService) {
+	                       @Qualifier("macaulayService") MediaService mediaService) {
 		this.birdService = birdService;
-		this.flickrService = flickrService;
-		this.xenoCantoService = xenoCantoService;
+		this.mediaService = mediaService;
 	}
 
-	public Response createResponse(String language) throws BirdFlickrException {
+	public Response createResponse(String language, MediaType mediaType) throws BirdFlickrException {
 		Bird bird = null;
-		List<BirdPhoto> pictures = Collections.emptyList();
+		Optional<Media> media = Optional.empty();
 
-		while (pictures.isEmpty()) {
+		// TODO this is a fugly solution, improve
+		for (int i = 0 ; i < 10 ; i++) {
 			bird = birdService.findRandom();
-			pictures = flickrService.getPictures(bird);
+			try {
+				media = Optional.of(mediaService.getMedia(bird, mediaType));
+				break;
+			} catch (CountNotFindMediaException e) {
+				logger.warn("Could not find media for " + bird.getScientificName());
+			}
 		}
 
 		final List<Response.ResponseBird> collect = bird.getGenus()
@@ -46,7 +59,7 @@ public class ResponseService {
 
 		return Response.builder()
 			.genusBirds(collect)
-			.pictureUrl(pictures.get(new Random(0).nextInt(pictures.size())).getNiftyUrl())
+			.media(media.orElseThrow(() -> new IllegalStateException("Could not find proper media for a number of random birds, giving up")))
 			.actualBird(mapToRB(bird, language))
 			.build();
 	}
