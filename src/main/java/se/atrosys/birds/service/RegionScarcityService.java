@@ -71,7 +71,11 @@ public class RegionScarcityService {
 
 	public void populateRegionalScarcities() {
 		Map<Region, List<RegionalScarcity>> map = readRegionalScarcities();
-		map.values().forEach(regionalScarcityRepository::save);
+		logger.debug("Saving regional scarcities");
+		map.values()
+			.parallelStream()
+			.forEach(regionalScarcityRepository::save);
+		logger.debug("...done");
 	}
 
 	protected Map<Region, List<RegionalScarcity>> readRegionalScarcities() {
@@ -82,10 +86,10 @@ public class RegionScarcityService {
 	}
 
 	private List<RegionalScarcity> readRegion(Region region) {
-		logger.info("Populating birds from region {} ({}) with scarcities", region.getName(), region.getCode());
+		logger.debug("Populating birds from region {} ({}) with scarcities", region.getName(), region.getCode());
 		AviBaseResult result = readRegionFile(region);
 
-		return result.getRegionalScarcities()
+		final List<RegionalScarcity> list = result.getRegionalScarcities()
 			.parallelStream()
 //			.stream()
 			.filter(abr -> !abr.getScarcities().contains(Scarcity.EXTINCT))
@@ -93,6 +97,8 @@ public class RegionScarcityService {
 			.map(r -> mapRegionalScarcity(region, r))
 			.filter(Objects::nonNull)
 			.collect(Collectors.toList());
+
+		return list;
 	}
 
 	protected AviBaseResult readRegionFile(Region region) {

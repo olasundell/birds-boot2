@@ -7,6 +7,8 @@ import org.junit.Test;
 import org.springframework.core.io.ClassPathResource;
 import se.atrosys.birds.model.Bird;
 import se.atrosys.birds.model.BirdName;
+import se.atrosys.birds.model.Language;
+import se.atrosys.birds.model.MediaType;
 
 import java.io.IOException;
 import java.util.Collections;
@@ -46,10 +48,10 @@ public class MacaulayServiceTest {
 			.ebirdTaxonId("eurmag1")
 			.birdNames(Collections.singletonList(BirdName.builder()
 				.name("Eurasian Magpie")
-				.language(Locale.ENGLISH)
+				.language(Language.builder().locale(Locale.ENGLISH).build())
 				.build()))
 			.scientificName("pica pica")
-			.build(), mediaType);
+			.build(), MediaType.PHOTO);
 
 		Assert.assertNotNull(result);
 	}

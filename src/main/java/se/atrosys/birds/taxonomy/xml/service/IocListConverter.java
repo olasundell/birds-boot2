@@ -1,10 +1,13 @@
 package se.atrosys.birds.taxonomy.xml.service;
 
+import org.hibernate.cfg.CollectionSecondPass;
+import org.springframework.stereotype.Component;
 import se.atrosys.birds.model.Bird;
 import se.atrosys.birds.model.BirdName;
 import se.atrosys.birds.model.BreedingRegion;
 import se.atrosys.birds.model.Family;
 import se.atrosys.birds.model.Genus;
+import se.atrosys.birds.model.Language;
 import se.atrosys.birds.model.Order;
 import se.atrosys.birds.taxonomy.xml.model.IocList;
 import se.atrosys.birds.taxonomy.xml.model.XmlFamily;
@@ -14,19 +17,25 @@ import se.atrosys.birds.taxonomy.xml.model.XmlSpecies;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
-import java.util.Locale;
 import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
  * TODO write documentation
  */
+@Component
 public class IocListConverter {
-	private final Map<String, Locale> languages;
+	private final Map<String, Language> languages = new HashMap<>();
+	private final LanguageConverter languageConverter;
 
-	public IocListConverter(Collection<String> lang) {
-		languages = LanguageConverter.shouldFindLanguagesAsLocales(lang);
+	public IocListConverter(LanguageConverter languageConverter) {
+		this.languageConverter = languageConverter;
+	}
+
+	public void populateLanguages(Collection<String> lang) {
+		languages.putAll(languageConverter.findAndPopulateLanguages(lang));
 	}
 
 	public List<Order> convertIocList(IocList iocList) {

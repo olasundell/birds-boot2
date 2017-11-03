@@ -35,3 +35,27 @@ spring:
     hibernate:
       ddl-auto: validate
     database: postgresql
+#    generate-ddl: true
+#    properties.javax.persistence.schema-generation.create-source: metadata
+#    properties.javax.persistence.schema-generation.scripts.action: create
+#    properties.javax.persistence.schema-generation.scripts.create-target: create.sql
+
+---
+spring:
+  profiles: postgresql-createschema
+
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    name: birds
+    username: birds
+    password: birds
+    url: jdbc:postgresql://localhost/birds
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database: postgresql
+#    generate-ddl: true
+    properties.javax.persistence.schema-generation.create-source: metadata
+    properties.javax.persistence.schema-generation.scripts.action: create
+    properties.javax.persistence.schema-generation.scripts.create-target: create.sql

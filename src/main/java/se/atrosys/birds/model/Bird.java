@@ -22,6 +22,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Index;
+import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
@@ -56,7 +57,7 @@ public class Bird {
 	private String href;
 
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	@JoinTable(indexes = { @Index(name = "birds_bird_names_bird_id_idx", columnList = "bird_id")})
+	@JoinColumn(name = "bird_id")
 	@JsonManagedReference
 	private List<BirdName> birdNames;
 

@@ -9,7 +9,9 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.IndexColumn;
+import org.hibernate.annotations.Type;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -31,6 +33,7 @@ import java.util.Locale;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
+@Table(indexes = { @Index(name = "bird_name_bird_id_idx", columnList = "bird_id")})
 public class BirdName {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -43,10 +46,12 @@ public class BirdName {
 
 	private String name;
 
-	private Locale language;
+	@ManyToOne
+	@JoinColumn
+	private Language language;
 
 	@JsonProperty("lang")
 	public String getLang() {
-		return language.getDisplayLanguage();
+		return language.getLocale().getDisplayLanguage();
 	}
 }

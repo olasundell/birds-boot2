@@ -39,7 +39,7 @@ public class IocListConverterTest {
 
 		Assert.assertFalse("Should have non-empty language list", languages.isEmpty());
 
-		iocListConverter = new IocListConverter(languages);
+		iocListConverter = new IocListConverter(new LanguageConverter(null));
 	}
 
 	@Test

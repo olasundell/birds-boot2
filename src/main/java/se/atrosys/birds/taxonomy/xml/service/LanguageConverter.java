@@ -2,6 +2,9 @@ package se.atrosys.birds.taxonomy.xml.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+import se.atrosys.birds.model.Language;
+import se.atrosys.birds.repository.LanguageRepository;
 
 import java.util.AbstractMap;
 import java.util.ArrayList;
@@ -14,22 +17,28 @@ import java.util.stream.Collectors;
 /**
  * TODO write documentation
  */
+@Component
 public class LanguageConverter {
 	private static final Logger logger = LoggerFactory.getLogger(LanguageConverter.class);
+	private final LanguageRepository languageRepository;
 
-	public static Map<String, Locale> shouldFindLanguagesAsLocales(Collection<String> languages) {
+	public LanguageConverter(LanguageRepository languageRepository) {
+		this.languageRepository = languageRepository;
+	}
+
+	public Map<String, Language> findAndPopulateLanguages(Collection<String> languages) {
 		final List<String> strings = new ArrayList<>(languages);
 
 		return strings.stream()
-			.map(LanguageConverter::mapLocale)
-			.collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+			.map(this::mapLocale)
+			.collect(Collectors.toMap(Map.Entry::getKey, e -> languageRepository.save(e.getValue())));
 	}
 
-	private static Map.Entry<String, Locale> mapLocale(String s) {
-		return new AbstractMap.SimpleEntry<>(s, findLocale(s));
+	private Map.Entry<String, Language> mapLocale(String s) {
+		return new AbstractMap.SimpleEntry<>(s, Language.builder().locale(findLocale(s)).build());
 	}
 
-	private static Locale findLocale(String lang) {
+	private Locale findLocale(String lang) {
 		logger.trace("Finding locale for {}", lang);
 		switch (lang) {
 			case "Scientific Name":

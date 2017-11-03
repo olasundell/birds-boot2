@@ -32,6 +32,7 @@ public class PopulateService {
 	private final RegionScarcityService regionScarcityService;
 	private final EbirdService ebirdService;
 	private final IocTranslationService iocTranslationService;
+	private final IocListConverter iocListConverter;
 
 	public PopulateService(BirdsFromXmlService xmlService,
 	                       AviBaseRegionService aviBaseRegionService,
@@ -40,7 +41,8 @@ public class PopulateService {
 	                       AviBaseService aviBaseService,
 	                       RegionScarcityService regionScarcityService,
 	                       EbirdService ebirdService,
-	                       IocTranslationService iocTranslationService) {
+	                       IocTranslationService iocTranslationService,
+	                       IocListConverter iocListConverter) {
 
 		this.xmlService = xmlService;
 		this.aviBaseRegionService = aviBaseRegionService;
@@ -50,6 +52,7 @@ public class PopulateService {
 		this.regionScarcityService = regionScarcityService;
 		this.ebirdService = ebirdService;
 		this.iocTranslationService = iocTranslationService;
+		this.iocListConverter = iocListConverter;
 	}
 
 	public void populate() {
@@ -79,7 +82,9 @@ public class PopulateService {
 		IocList iocList = xmlService.readIocList();
 		iocList = xmlService.readCsv(iocList);
 
-		List<Order> orders = new IocListConverter(xmlService.languages(iocList)).convertIocList(iocList);
+		iocListConverter.populateLanguages(xmlService.languages(iocList));
+		List<Order> orders = iocListConverter.convertIocList(iocList);
+
 		orders = ebirdService.addEbirdInformation(orders, iocTranslationService.read());
 
 		if (i == -1) {
