@@ -79,6 +79,7 @@ public class BirdPopulator {
 	private Consumer<Bird> saveBird(Genus genus) {
 		return b ->{
 			b.setGenus(genus);
+			b.getBirdNames().forEach(bn -> bn.setBird(b));
 			birdService.save(b);
 		};
 	}

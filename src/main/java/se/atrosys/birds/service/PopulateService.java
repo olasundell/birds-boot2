@@ -75,6 +75,7 @@ public class PopulateService {
 	}
 
 	public void populateRegions() {
+		regionRepository.save(Region.builder().code("WORLD").name("Whole world").build());
 		regionRepository.save(aviBaseRegionService.readRegions());
 	}
 

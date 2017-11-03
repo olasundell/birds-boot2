@@ -47,7 +47,6 @@ public class BirdName {
 	private String name;
 
 	@ManyToOne
-	@JoinColumn
 	private Language language;
 
 	@JsonProperty("lang")

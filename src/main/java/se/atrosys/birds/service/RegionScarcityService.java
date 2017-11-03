@@ -82,7 +82,9 @@ public class RegionScarcityService {
 		List<Region> regions = new ArrayList<>();
 		regionRepository.findAll().forEach(regions::add);
 
-		return regions.stream().collect(Collectors.toMap(Function.identity(), this::readRegion));
+		return regions.stream()
+			.filter(r -> !"WORLD".equals(r.getCode()))
+			.collect(Collectors.toMap(Function.identity(), this::readRegion));
 	}
 
 	private List<RegionalScarcity> readRegion(Region region) {
