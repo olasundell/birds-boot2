@@ -36,13 +36,13 @@ public class ResponseService {
 		this.mediaService = mediaService;
 	}
 
-	public Response createResponse(String language, MediaType mediaType) throws BirdFlickrException {
+	public Response createResponse(String language, MediaType mediaType, String regionCode) {
 		Bird bird = null;
 		Optional<Media> media = Optional.empty();
 
 		// TODO this is a fugly solution, improve
 		for (int i = 0 ; i < 10 ; i++) {
-			bird = birdService.findRandom();
+			bird = birdService.findRandom(regionCode);
 			try {
 				media = Optional.of(mediaService.getMedia(bird, mediaType));
 				break;

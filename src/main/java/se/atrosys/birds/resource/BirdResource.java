@@ -34,15 +34,16 @@ public class BirdResource {
 
 	@GetMapping("/random")
 	public Response random(@RequestParam(required = false, name = "lang", defaultValue = "english") String language,
-	                       @RequestParam(required = false, name = "mediaType", defaultValue = "photo") String mediaType) throws BirdFlickrException {
+	                       @RequestParam(required = false, name = "mediaType", defaultValue = "photo") String mediaType,
+	                       @RequestParam(required = false, name = "regionCode", defaultValue = "WORLD") String regionCode) throws BirdFlickrException {
 		MediaType mt = MediaType.PHOTO;
 		if (mediaType.equals("audio")) {
 			mt = MediaType.AUDIO;
 		}
 
-		Response response = responseService.createResponse(language, mt);
+		Response response = responseService.createResponse(language, mt, regionCode);
 
-		logger.info("Getting a random bird, {}", response.getActualBird().getScientificName());
+		logger.info("Getting a random bird, {} lang {}", response.getActualBird().getScientificName(), language);
 
 		return response;
 	}

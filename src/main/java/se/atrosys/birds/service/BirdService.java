@@ -8,8 +8,13 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Component;
 import se.atrosys.birds.model.Bird;
+import se.atrosys.birds.model.Region;
+import se.atrosys.birds.model.RegionalScarcity;
 import se.atrosys.birds.repository.BirdRepository;
-import se.atrosys.birds.repository.GenusRepository;
+import se.atrosys.birds.repository.RegionRepository;
+import se.atrosys.birds.repository.RegionalScarcityRepository;
+
+import java.util.Set;
 
 /**
  * TODO write documentation
@@ -17,10 +22,17 @@ import se.atrosys.birds.repository.GenusRepository;
 @Component
 public class BirdService {
 	private final BirdRepository birdRepository;
+	private final RegionRepository regionRepository;
+	private final RegionalScarcityRepository regionalScarcityRepository;
+
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-	public BirdService(BirdRepository birdRepository) {
+	public BirdService(BirdRepository birdRepository,
+	                   RegionRepository regionRepository,
+	                   RegionalScarcityRepository regionalScarcityRepository) {
 		this.birdRepository = birdRepository;
+		this.regionRepository = regionRepository;
+		this.regionalScarcityRepository = regionalScarcityRepository;
 	}
 
 	@Cacheable(cacheNames= "birds", key = "#scientificName.toLowerCase()")
@@ -42,8 +54,12 @@ public class BirdService {
 		return bird;
 	}
 
-	public Bird findRandom() {
-		return birdRepository.findOne(birdRepository.randomId());
+	public Bird findRandom(String regionCode) {
+		if ("WORLD".equals(regionCode)) {
+			return birdRepository.findOne(birdRepository.randomId());
+		}
+
+		return birdRepository.findOne(birdRepository.randomId(regionCode));
 	}
 
 	public Page<Bird> findAll(Pageable pageable) {

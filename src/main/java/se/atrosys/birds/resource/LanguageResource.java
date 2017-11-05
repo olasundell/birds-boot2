@@ -2,6 +2,7 @@ package se.atrosys.birds.resource;
 
 import lombok.Builder;
 import lombok.Data;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import se.atrosys.birds.model.Language;
@@ -17,6 +18,7 @@ import java.util.stream.StreamSupport;
  * TODO write documentation
  */
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 public class LanguageResource {
 	private final BirdNameRepository birdNameRepository;
 	private final LanguageRepository languageRepository;
@@ -27,21 +29,10 @@ public class LanguageResource {
 		this.languageRepository = languageRepository;
 	}
 
-//	@GetMapping("/foo")
-//	public BirdName l() {
-//		final Iterable<Locale> distinctLanguages = birdNameRepository.findDistinctLocales();
-//		Locale l = distinctLanguages.iterator().next();
-//		final BirdName next = birdNameRepository.findAll().iterator().next();
-//		return next;
-//	}
-//
 	@GetMapping("/languages")
 	public List<LanguageResponse> languages() {
-//		return Collections.emptyList();
-//		final Iterable<String> distinctLanguages = birdNameRepository.findDistinctLanguages();
 		Iterable<Language> distinctLanguages = languageRepository.findAll();
 		return StreamSupport.stream(distinctLanguages.spliterator(), false)
-//			.map(s -> Locale.forLanguageTag(s))
 			.map(l -> createResponse(l.getLocale()))
 			.collect(Collectors.toList());
 	}
