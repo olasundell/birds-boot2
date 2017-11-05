@@ -6,6 +6,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import se.atrosys.birds.exception.BirdFlickrException;
@@ -35,7 +36,7 @@ public class BirdResource {
 	@GetMapping("/random")
 	public Response random(@RequestParam(required = false, name = "lang", defaultValue = "english") String language,
 	                       @RequestParam(required = false, name = "mediaType", defaultValue = "photo") String mediaType,
-	                       @RequestParam(required = false, name = "regionCode", defaultValue = "WORLD") String regionCode) throws BirdFlickrException {
+	                       @RequestParam(required = false, name = "region", defaultValue = "WORLD") String regionCode) throws BirdFlickrException {
 		MediaType mt = MediaType.PHOTO;
 		if (mediaType.equals("audio")) {
 			mt = MediaType.AUDIO;
@@ -51,5 +52,10 @@ public class BirdResource {
 	@GetMapping("/birds")
 	public Page<Bird> all(Pageable pageable) {
 		return birdService.findAll(pageable);
+	}
+
+	@GetMapping("/byregion/{region}")
+	public Page<Bird> byRegion(@PathVariable String region) {
+		return birdService.byRegion(region);
 	}
 }
