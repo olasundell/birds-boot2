@@ -47,6 +47,8 @@ public class LanguageConverter {
 				return Locale.forLanguageTag("af");
 			case "Chinese (Traditional)":
 				return Locale.TRADITIONAL_CHINESE;
+			case "Chinese":
+				return Locale.SIMPLIFIED_CHINESE;
 			default:
 				for (Locale l: Locale.getAvailableLocales()) {
 					if (l.getDisplayLanguage().equalsIgnoreCase(lang)) {

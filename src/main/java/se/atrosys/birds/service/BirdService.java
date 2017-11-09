@@ -19,8 +19,6 @@ import se.atrosys.birds.repository.RegionalScarcityRepository;
 @Component
 public class BirdService {
 	private final BirdRepository birdRepository;
-	private final RegionRepository regionRepository;
-	private final RegionalScarcityRepository regionalScarcityRepository;
 
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -28,8 +26,6 @@ public class BirdService {
 	                   RegionRepository regionRepository,
 	                   RegionalScarcityRepository regionalScarcityRepository) {
 		this.birdRepository = birdRepository;
-		this.regionRepository = regionRepository;
-		this.regionalScarcityRepository = regionalScarcityRepository;
 	}
 
 	@Cacheable(cacheNames= "birds", key = "#scientificName.toLowerCase()")

@@ -12,7 +12,7 @@ import java.util.List;
  * TODO write documentation
  */
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200", "http://localhost:3000"} )
 public class RegionResource {
 	private final RegionRepository regionRepository;
 

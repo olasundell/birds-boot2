@@ -36,21 +36,40 @@ public class ResponseService {
 		this.mediaService = mediaService;
 	}
 
-	public Response createResponse(String language, MediaType mediaType, String regionCode) {
+	public Response createRandomResponse(String language, MediaType mediaType, String regionCode) {
 		Bird bird = null;
 		Optional<Media> media = Optional.empty();
 
 		// TODO this is a fugly solution, improve
 		for (int i = 0 ; i < 10 ; i++) {
 			bird = birdService.findRandom(regionCode);
-			try {
-				media = Optional.of(mediaService.getMedia(bird, mediaType));
+			media = findMedia(bird, mediaType);
+			if (media.isPresent()) {
 				break;
-			} catch (CountNotFindMediaException e) {
-				logger.warn("Could not find media for " + bird.getScientificName());
 			}
 		}
 
+		return buildResponse(language, bird, media);
+	}
+
+	private Optional<Media> findMedia(Bird bird, MediaType mediaType) {
+		try {
+			return Optional.of(mediaService.getMedia(bird, mediaType));
+		} catch (CountNotFindMediaException e) {
+			logger.warn("Could not find media for " + bird.getScientificName());
+		}
+
+		return Optional.empty();
+	}
+
+	public Response getGivenBirdResponse(String language, MediaType mediaType, String regionCode, String sciName) {
+		Bird bird = birdService.findByScientificName(sciName);
+		Optional<Media> media = findMedia(bird, mediaType);
+
+		return buildResponse(language, bird, media);
+	}
+
+	private Response buildResponse(String language, Bird bird, Optional<Media> media) {
 		final List<Response.ResponseBird> collect = bird.getGenus()
 			.getBirds()
 			.stream()
@@ -67,7 +86,7 @@ public class ResponseService {
 	private Response.ResponseBird mapToRB(Bird bird, String language) {
 		return Response.ResponseBird.builder()
 			.genusName(bird.getGenusName())
-			.name(bird.namesByLanguage().get(language.toLowerCase()))
+			.name(bird.namesByLangCode().get(language))
 			.scientificName(bird.getScientificName())
 			.build();
 	}

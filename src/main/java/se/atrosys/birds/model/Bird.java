@@ -91,6 +91,22 @@ public class Bird {
 
 	@Transient
 	@JsonIgnore
+	public Map<String, String> namesByLangCode() {
+		Map<String, String> map = new HashMap<>();
+
+		for (BirdName name: birdNames) {
+			map.put(name.getLanguage().getLocale().toString(), name.getName());
+		}
+
+		return map;
+
+		// it is beyond me why the below doesn't work
+//		return birdNames.stream()
+//			.collect(Collectors.toMap(BirdName::getLang, BirdName::getName));
+	}
+
+	@Transient
+	@JsonIgnore
 	public Map<String, String> namesByLanguage() {
 		Map<String, String> map = new HashMap<>();
 

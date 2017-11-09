@@ -16,13 +16,11 @@ import se.atrosys.birds.model.Response;
 import se.atrosys.birds.service.BirdService;
 import se.atrosys.birds.service.ResponseService;
 
-import javax.xml.bind.JAXBException;
-
 /**
  * TODO write documentation
  */
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200", "http://localhost:3000"} )
 public class BirdResource {
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 	private final BirdService birdService;
@@ -34,17 +32,33 @@ public class BirdResource {
 	}
 
 	@GetMapping("/random")
-	public Response random(@RequestParam(required = false, name = "lang", defaultValue = "english") String language,
+	public Response random(@RequestParam(required = false, name = "lang", defaultValue = "en_US") String language,
 	                       @RequestParam(required = false, name = "mediaType", defaultValue = "photo") String mediaType,
-	                       @RequestParam(required = false, name = "region", defaultValue = "WORLD") String regionCode) throws BirdFlickrException {
+	                       @RequestParam(required = false, name = "region", defaultValue = "WORLD") String regionCode,
+	                       @RequestParam(required = false, name = "name", defaultValue = "") String name) throws BirdFlickrException {
+
 		MediaType mt = MediaType.PHOTO;
 		if (mediaType.equals("audio")) {
 			mt = MediaType.AUDIO;
 		}
 
-		Response response = responseService.createResponse(language, mt, regionCode);
+		Response response;
 
-		logger.info("Getting a random bird, {} lang {}", response.getActualBird().getScientificName(), language);
+		if (name.isEmpty()) {
+			response = responseService.createRandomResponse(language, mt, regionCode);
+
+			logger.info("Getting a random bird, {} {} lang {}",
+				response.getActualBird().getScientificName(),
+				response.getActualBird().getName(),
+				language);
+		} else {
+			response = responseService.getGivenBirdResponse(language, mt, regionCode, name);
+
+			logger.info("Getting a specific bird, {} {} lang {}",
+				response.getActualBird().getScientificName(),
+				response.getActualBird().getName(),
+				language);
+		}
 
 		return response;
 	}
