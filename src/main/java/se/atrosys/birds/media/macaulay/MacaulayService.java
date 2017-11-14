@@ -10,9 +10,11 @@ import se.atrosys.birds.media.MediaService;
 import se.atrosys.birds.model.Bird;
 import se.atrosys.birds.model.Media;
 import se.atrosys.birds.model.MediaType;
+import se.atrosys.birds.service.BirdService;
 
 import java.time.Instant;
 import java.util.List;
+import java.util.Random;
 
 /**
  * TODO write documentation
@@ -50,10 +52,23 @@ import java.util.List;
 public class MacaulayService implements MediaService {
 	// read from https://www.macaulaylibrary.org
 	private final RestTemplate restTemplate;
+	private final BirdService birdService;
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
+	private final Random random;
 
-	public MacaulayService() {
-		this.restTemplate = new RestTemplate();
+	public MacaulayService(RestTemplate restTemplate, BirdService birdService) {
+		this.restTemplate = restTemplate;
+		this.birdService = birdService;
+		random = new Random(0);
+	}
+
+	@Override
+	public Media getSpecificMedia(Media.MediaHash hash) {
+		final List<MacaulayContent> content = search(birdService.findById(hash.getBirdId()), hash.getMediaType())
+			.getResults()
+			.getContent();
+
+		return buildMedia(hash.getMediaType(), hash.getIndex(), content);
 	}
 
 	@Override
@@ -62,8 +77,17 @@ public class MacaulayService implements MediaService {
 		if (content.isEmpty()) {
 			throw new CountNotFindMediaException(bird);
 		}
+		final int index = random.nextInt(content.size());
+
+		return buildMedia(mediaType, index, content);
+	}
+
+	private Media buildMedia(MediaType mediaType, int index, List<MacaulayContent> content) {
+		final MacaulayContent macaulayContent = content.get(index);
+
 		return Media.builder()
-			.url(content.get(0).getMediaUrl())
+			.url(macaulayContent.getMediaUrl())
+			.hash(Media.MediaHash.builder().source("MACAULAY").mediaType(mediaType).index(index).build())
 			.mediaType(mediaType)
 			.build();
 	}

@@ -28,13 +28,4 @@ public class EbirdServiceTest {
 		Assert.assertNotNull(result);
 		Assert.assertFalse(result.isEmpty());
 	}
-
-	@Test
-	public void shouldHaveCombDuck() {
-		Map<String, EbirdSpecies> engNameMap = ebirdService.engNameMap();
-		Map<String, EbirdSpecies> sciNameMap = ebirdService.sciNameMap();
-
-		Assert.assertTrue(engNameMap.containsKey("comb duck"));
-		Assert.assertTrue(sciNameMap.containsKey("sarkidiornis sylvicola"));
-	}
 }

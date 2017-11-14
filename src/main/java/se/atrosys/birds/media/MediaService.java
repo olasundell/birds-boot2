@@ -9,5 +9,7 @@ import se.atrosys.birds.model.MediaType;
  * TODO write documentation
  */
 public interface MediaService {
+	Media getSpecificMedia(Media.MediaHash hash);
+
 	Media getMedia(Bird bird, MediaType mediaType) throws CountNotFindMediaException;
 }

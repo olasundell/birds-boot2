@@ -1,6 +1,7 @@
 package se.atrosys.birds.flickr;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import se.atrosys.birds.exception.BirdFlickrException;
 import se.atrosys.birds.media.flickr.FileFetcher;
@@ -15,6 +16,7 @@ import java.util.List;
  */
 public class FlickrServiceTest {
 	@Test
+	@Ignore("integration test. Anyway, Flickr is deprecated.")
 	public void shouldDoStuff() throws BirdFlickrException {
 		FlickrService service = new FlickrService(new FileFetcher());
 		List<BirdPhoto> result = service.getPictures(Bird.builder()

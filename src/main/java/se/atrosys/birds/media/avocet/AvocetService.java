@@ -12,6 +12,11 @@ import se.atrosys.birds.model.MediaType;
 @Component
 public class AvocetService implements MediaService {
 	@Override
+	public Media getSpecificMedia(Media.MediaHash hash) {
+		return null;
+	}
+
+	@Override
 	public Media getMedia(Bird bird, MediaType mediaType) {
 		return null;
 	}

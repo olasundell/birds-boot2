@@ -64,4 +64,9 @@ public class BirdService {
 	public Page<Bird> byRegion(String region) {
 		return birdRepository.findByRegion_id(region, new PageRequest(1, 20));
 	}
+
+	// TODO @Cacheable - create cache etc
+	public Bird findById(Integer birdId) {
+		return birdRepository.findOne(birdId);
+	}
 }

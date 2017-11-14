@@ -99,10 +99,6 @@ public class Bird {
 		}
 
 		return map;
-
-		// it is beyond me why the below doesn't work
-//		return birdNames.stream()
-//			.collect(Collectors.toMap(BirdName::getLang, BirdName::getName));
 	}
 
 	@Transient

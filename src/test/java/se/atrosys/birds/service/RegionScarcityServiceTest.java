@@ -29,7 +29,7 @@ import java.util.Map;
 @RunWith(SpringRunner.class)
 @DataJpaTest
 @EnableCaching
-@ComponentScan({"se.atrosys.birds.service", "se.atrosys.birds.taxonomy.xml", "se.atrosys.birds.taxonomy.avibase", "se.atrosys.birds.flickr", "se.atrosys.birds.media.xenocanto"})
+@ComponentScan({"se.atrosys.birds"})
 public class RegionScarcityServiceTest {
 	@Autowired
 	private BirdRepository birdRepository;
@@ -56,6 +56,7 @@ public class RegionScarcityServiceTest {
 	}
 
 	@Test
+	@Ignore("Too extensive a test")
 	public void test() {
 //		populateService.populateRegions();
 //		populateService.populateBirds();
